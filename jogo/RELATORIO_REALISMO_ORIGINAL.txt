@@ -1,0 +1,11 @@
+VERIFICACAO DA VERSAO COM TEXTURAS ORIGINAIS
+
+Origem: Amber(1).Fbx (personagem enviado pelo usuario). O arquivo possui imagens JPEG/PNG incrustadas, incluindo Std_Skin_Head_Diffuse 2048x2048, Std_Skin_Head_Normal 2048x2048, cabelo/mascaras de opacidade 2048x2048.
+
+Exportadas 28 imagens para assets/amber_origem/: rosto nativo 2K, corpo e roupa ajustados a 1K para reduzir custo no Android, quatro mascaras distintas do cabelo convertidas em RGBA; nao existe upscaling artificial 4K nesta versao.
+
+Modelagem/esqueleto: assets/Amber_animada.glb da versao anterior, com 101 ossos e quatro clips PROCEDURAIS, conservado integralmente. Nao e motion capture nem animacao FBX original. Godot Android nao foi executado neste ambiente.
+
+Olhos: arquivos assets/amber_texturas/olho_direito_corrigido.png e olho_esquerdo_corrigido.png da versao anterior foram preservados, e as camadas transparentes sobrepostas seguem desativadas.
+
+Integridade de arquivos ZIP e presenca de texturas sao verificacoes de arquivo, nao de aparencia ou desempenho no aparelho.

@@ -1,0 +1,32 @@
+AMBERCITY — PELE E CABELO ORIGINAIS DA AMBER — GODOT 4 ANDROID
+
+1. Extraia o ZIP unico no seu Android e abra AmberCity_Godot4_Android/project.godot no Godot 4.
+2. Aguarde a importacao. A primeira abertura pode demorar pelas texturas originais.
+3. Execute cidade.tscn. Analogico esquerdo: andar; totalmente inclinado: correr; botao Pular: pulo.
+4. Teste_Amber.tscn e uma cena de diagnostico com botoes para observar movimentos e os ossos.
+
+O QUE MUDOU:
+- Recuperadas diretamente do FBX original texturas de rosto e normal map NATIVOS 2048x2048.
+- Pele, roupas e seus mapas normais agora usam imagens reais do FBX em ate 1024x1024, em vez de mapas falsos gerados a partir da cor.
+- Cabelo, franja, coque, escalpo, sobrancelhas e cilios usam mascaras ORIGINAIS de transparencia: fios vazados, nao placas opacas. As quatro partes do cabelo agora usam texturas diferentes, como no arquivo de origem.
+- Os olhos corrigidos da versao anterior foram preservados; as imagens originais dos olhos NAO substituem essa correcao.
+- Sombra de contato acompanha o chao durante saltos. Controle da Amber continua com quatro clips Idle/Walk/Run/Jump.
+- Removidas as antigas texturas pseudo-4K: ampliar um JPEG de 512 nao recupera detalhes. As texturas autenticas do FBX possuem resolucao maxima de 2K para pele/cabelo.
+
+LIMITES: quatro animacoes sao movimentos procedurais no esqueleto recuperado do FBX, NAO os movimentos gravados do FBX Motion. Nao foi possivel executar o Godot no seu Android daqui nem validar FPS ou conferir a imagem final. Se houver um erro real na importacao, nao afirme que o projeto foi testado no aparelho.
+
+Arquivos-chave: assets/Amber_animada.glb, assets/amber_origem/, scripts/personagem.gd, Teste_Amber.tscn.
+
+OTIMIZACAO AUDITADA (esta entrega):
+- Removidos vertices duplicados NA REPRESENTACAO do GLB: de 1.960.260 para 671.018 ao compactar, por superficie, vertices nao usados por seus respectivos indices.
+- Os 893.492 triangulos foram preservados. Nenhuma face foi simplificada; os vertices, UVs, normais e pesos de cada canto foram reconstruidos e comparados com o GLB anterior.
+- Os arquivos de texturas reais do FBX, a correcao de olhos e as animacoes existentes permanecem na pasta.
+- Esta otimizacao reduz a memoria/volume de atributos de vertices; NAO garante mais FPS, especialmente em celulares com pouca RAM, pois o modelo ainda possui muitos triangulos.
+- O relatorio RELATORIO_AUDITORIA_ATUAL.json distingue testes automaticos de importacao/renderizacao, que nao foi possivel executar neste ambiente nem no seu Android.
+
+- Os dez materiais que usam mapas normais originais receberam base tangente ortogonalizada, necessária para orientar o relevo da textura com UV. A aparencia final nao foi avaliada no renderizador Godot.
+
+ATUALIZACAO DE QUALIDADE E DESEMPENHO:
+- Android inicia no perfil EQUILIBRADO com sombras. Em aparelhos com FPS abaixo de 23 por grande parte da janela de 4 a 12 s, o perfil muda automaticamente para ECONOMIA. A escolha manual do perfil prevalece.
+- Foi simulada a deformacao de 4.158 vertices amostrados das botas em 25 instantes de cada animacao. Nenhum sample ficou mais de 1,5 cm abaixo do solo plano. Isso NAO testa contato real em terrenos inclinados ou no Godot.
+- Nao existe teste de execucao nem imagem renderizada confirmada no Godot ou no celular, portanto esta versao nao deve ser descrita como jogo pronto ou fotorrealista.

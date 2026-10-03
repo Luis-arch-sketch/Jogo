@@ -1,0 +1,23 @@
+AMBERCITY — MAPA COM MOVIMENTO DA AMBER (21/09/2026)
+
+PROBLEMA ENCONTRADO NO CODIGO ANTERIOR:
+O minimapa apresentava 930 metros em apenas 158 pixels. Cada metro movia
+o marcador cerca de 0,15 pixel na horizontal, imperceptivel ao caminhar.
+
+ALTERACOES:
+- Minimap com zoom local de 110 x 74 metros, sem mudar a escala do mapa completo.
+- Posicao real da Amber lida a cada quadro e enviada aos DOIS mapas.
+- Marcador vermelho, direcao do movimento, trilha curta e coordenadas X/Z
+  atualizadas no proprio botao MAPA e dentro do minimapa.
+- Vista local segue a Amber quando chega perto das bordas.
+- Cidade 500x500, outra ilha, mar, ponte, camera 3a pessoa e recursos originais
+  preservados sem edicao.
+
+TESTE ESTATICO:
+Comparacao dos arquivos originais por SHA256, validacao ZIP, presenca de
+referencias e simulacao matematica do deslocamento do marcador.
+NAO TESTADO: execucao/renderizacao no Godot Android, FPS, desempenho.
+
+EXTRACAO NO CELULAR:
+Extrair em pasta NOVA e abrir o project.godot dessa pasta.
+Se a Amber nao se deslocar no jogo, ela tambem nao pode mudar de posicao no mapa.

@@ -1,0 +1,12 @@
+AmberCity — olhos da Amber corrigidos
+
+O material original possuia esclera rosada, camadas de cornea com a mesma textura do globo ocular e brilho exagerado no script anterior.
+
+Nesta versao a textura dos olhos foi neutralizada, a iris foi mantida, as camadas duplicadas foram desativadas e o reflexo reduzido.
+As texturas 4K de pele, cabelo e roupas continuam no projeto. A textura dos olhos corrigidos tem a resolucao original (512 px): ampliar para 4K nao recupera detalhe real.
+
+PROJETO COMPLETO: extraia o ZIP e abra AmberCity_Godot4_Android/project.godot no Godot 4 para Android. Importe como um projeto novo para nao misturar arquivos de versoes antigas.
+
+CORRECAO PEQUENA: se voce ja extraiu a versao Amber 4K anterior, extraia o ZIP de correcao NA MESMA PASTA QUE CONTEM AmberCity_Godot4_Android e permita substituir scripts/personagem.gd. Abra o Godot e aguarde a importacao dos dois PNGs.
+
+Importante: nao foi possivel executar o Godot nem confirmar como os olhos aparecem no seu celular. Se continuar estranho, envie uma captura de tela para ajuste exato.

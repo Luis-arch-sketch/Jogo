@@ -1,0 +1,26 @@
+AMBERCITY - RECUPERACAO DA AMBER NO ANDROID
+
+A imagem enviada mostrava "AMBER: Modelo Amber ausente". Isso significa que a
+instancia do modelo 3D nao existe na cena durante essa execucao. Um arquivo
+presente no ZIP nao garante que o Godot tenha conseguido importa-lo.
+
+Ajustes nesta versao:
+1. Pasta com nome novo para evitar misturar arquivos/.godot de versoes antigas.
+2. Retirado grid_system.fbx (189 MB) porque a segunda cidade do projeto ja e
+   gerada pelo script expansao_mar_ponte.gd. O FBX continua no ZIP anterior.
+3. personagem.gd tenta carregar e instanciar o MESMO Amber_animada.glb se o no
+   Modelo_Amber nao tiver sido criado pela importacao normal.
+4. Se a importacao falhar, nao acessa visual nulo e mostra diagnostico mais claro.
+5. Camera, minimapa, cidade procedural, ponte e arquivos do GLB preservados.
+
+NO ANDROID:
+1. Extraia este ZIP em uma pasta NOVA; nao sobrescreva a pasta antiga.
+2. No editor Godot 4, importe o project.godot dessa pasta.
+3. Aguarde terminar toda a importacao de recursos ANTES de executar o jogo.
+4. Abra Amber.tscn no editor para confirmar que Modelo_Amber mostra a personagem.
+5. Se nao mostrar, abra Saida/Erros do editor, encontre o erro de
+   Amber_animada.glb e envie uma captura desse erro. Esse erro dira a causa
+   real da importacao malsucedida; nao adianta mudar a distancia da camera.
+
+IMPORTANTE: nao executei esta versao no Godot Android; somente testes dos
+arquivos, da malha GLB e da integridade do ZIP foram feitos aqui.

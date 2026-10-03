@@ -1,0 +1,20 @@
+AMBERCITY — MAX 4K + ANIMACOES AJUSTADAS
+
+1. Extraia o ZIP em uma pasta NOVA do seu Android.
+2. No editor Godot 4.3 ou mais recente para Android, importe o project.godot desta pasta.
+3. Execute cidade.tscn.
+4. Toque em CONFIG. / PC > GRAFICOS ate aparecer MAX 4K. A linha inferior
+   mostra a resolucao real que o jogo calculou para o render 3D.
+5. Os modos sao ECONOMIA, EQUILIBRADO, VISUAL e MAX 4K. Sua escolha fica salva.
+6. O modo MAX tenta chegar a 3840 x 2160: em um display 1920 x 1080
+   pode usar escala 2x; em outras telas o limite e a resolucao/proporcao
+   fisica e a escala maxima 2x. Isso nao altera a resolucao fisica do celular.
+7. MAX pode aquecer o aparelho, consumir bateria e reduzir FPS. Volte para
+   EQUILIBRADO se ficar travando.
+8. Caminhada usa passadas menores e bracos menos rigidos; salto dobra mais
+   quadris e joelhos no ar e estica antes de pousar.
+9. Teste_Amber.tscn permite ver os quatro movimentos sem precisar andar.
+
+Verificado no pacote: arquivos do projeto, dados de esqueleto, 101 juntas,
+quatro clips e integridade ZIP. A aparencia em movimento e o desempenho em
+4K precisam ser conferidos no seu Godot Android; nao foram testados aqui.

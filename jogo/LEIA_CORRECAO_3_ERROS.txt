@@ -1,0 +1,11 @@
+Esta versao corrige tres problemas apontados por Luis:
+1) camera reforcada em terceira pessoa real;
+2) outra cidade com predios e casas procedurais, sem depender do FBX para aparecer;
+3) ponte sem blocos saindo do piso.
+
+Verificacoes feitas neste ambiente:
+- scripts atualizados e presentes no ZIP;
+- ZIP recriado sem erros de integridade.
+
+Nao executado aqui:
+- teste visual no Godot Android.

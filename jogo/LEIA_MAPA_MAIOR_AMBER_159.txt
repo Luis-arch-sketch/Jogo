@@ -1,0 +1,13 @@
+AMBERCITY - MAPA 240 x 240 m E AMBER 1,59 m
+
+Mapa: antes 80 x 80 m (6.400 m2), agora 240 x 240 m (57.600 m2).
+O centro com os quatro edificios originais foi mantido. Oito bairros adicionais
+ganharam avenidas, calcadas e 32 predios leves com colisao e janelas instanciadas.
+Amber: altura aproximada 1,59 m calculada com a geometria do GLB e
+escala uniforme aplicada ao modelo 3D. Colisao ajustada para 1,59 m.
+Os mesmos movimentos dos bracos e do pulo foram preservados,
+assim como a opcao MAX 4K e a orientacao horizontal.
+Nao foi incluido nenhum bot/Flex AI.
+
+Teste: abra project.godot em uma pasta NOVA no Godot 4 para Android.
+O ZIP foi verificado estruturalmente; renderizacao no Android ainda nao foi testada.

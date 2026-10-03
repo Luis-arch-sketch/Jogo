@@ -1,0 +1,9 @@
+AMBERCITY — MAPA INTERATIVO E CAMERA EM TERCEIRA PESSOA
+
+MAPA: toque em MAPA no canto superior esquerdo ou no minimapa; abre o mapa geral com a cidade da Amber, ponte, mar e ilha externa. Toque nas regioes do mapa para consultar as informacoes. O ponto vermelho indica a posicao da Amber. Toque em FECHAR X para retornar ao jogo.
+
+CAMERA: a distancia saiu de 2,10 para 2,90 metros, com enquadramento de corpo inteiro e limite minimo de 2,55 metros para nao entrar em primeira pessoa quando a camera encontra um obstaculo. Continua ajustavel por toque. Paredes podem aparecer na frente da camera em ambientes muito apertados porque se priorizou nao invadir o corpo da personagem.
+
+VERIFICAVEL NOS ARQUIVOS: estes scripts existem e a cena principal continua sendo cidade_expandida.tscn. O projeto anterior foi preservado, inclusive modelo de Amber, cidade externa, ponte, mar, casas, predios e audio 5 s. Os desenhos de lotes no mapa sao esquematicos; o FBX nao oferece um cadastro individual de estabelecimentos.
+
+NAO TESTADO: nao houve execucao no Godot 4 Android nem verificacao visual ou de desempenho no dispositivo.

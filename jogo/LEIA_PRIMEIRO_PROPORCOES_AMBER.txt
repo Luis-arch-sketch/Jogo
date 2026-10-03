@@ -1,0 +1,25 @@
+AMBERCITY — AJUSTE DE PROPORCOES DA AMBER (PERSONAGEM 3D)
+
+PACOTE BASE: AmberCity_BRACOS_NATURAIS_CAMERA_PERTO_VOZ_5S.zip
+
+ALTERACAO REAL: a geometria de sete camadas do modelo Amber_animada.glb
+foi editada diretamente, com deslocamentos suaves e localizados em peito e
+gluteos. O ajuste nao foi feito em texturas nem com escalas globais de ossos.
+- Peito: ate 29 mm de aumento no contorno frontal, com dois volumes suaves.
+- Gluteos: ate 34 mm para tras e leve alargamento lateral de ate 5 mm;
+  transicao gradual para quadril e coxas.
+- Foram ajustadas pele do torso e pernas, jaqueta, top, roupa interior,
+  calca jeans e camiseta para acompanhar os novos contornos.
+- Normais e tangentes atualizadas para manter a resposta da iluminacao.
+- Clipes Idle/Walk/Run/Jump, esqueleto, pesos e coordenadas de textura
+  preservados. Correcoes anteriores de ombro, camera e voz preservadas.
+- Camera: distancia padrao de 2,10 metros.
+- Audio: uma vez somente, apos 5 segundos de jogo (Timer pausavel).
+
+TESTADO AQUI: integridade dos dados GLB e ZIP, campos de geometria, quatro
+clipes, referencias res:// locais, presenca do audio e configuracao textual
+de camera e temporizador. NAO TESTADO NO APARELHO: visual, colisoes, FPS,
+execucao do script nem reproduçao do audio no Godot Android.
+
+IMPORTANTE: extraia em pasta NOVA e abra o project.godot dessa pasta.
+Nao misture com o projeto antigo ou use cache de importacao dele.

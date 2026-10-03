@@ -1,0 +1,13 @@
+AMBERCITY — COTOVELOS MAIS MOVIMENTO
+
+Nesta versao, os cotovelos DOBRAM e ESTICAM ao longo de cada passada,
+com flexao maior na corrida. Os ombros tambem balancam mais sem grudar
+as maos no tronco. No salto os cotovelos dobram no ar; joelhos a frente
+continuam da versao anterior. Nenhum bot nem Flex AI foi incluido.
+
+Mantidos: jogo horizontal, MAX 4K, cidade e controles Android.
+
+Extrair numa pasta NOVA e abrir project.godot no Godot 4 Android.
+Abra Teste_Amber.tscn e toque ANDAR/CORRER/PULAR para conferir na tela.
+A verificacao aqui e numerica sobre os ossos reais; o resultado visual
+precisa ser conferido no celular.

@@ -1,0 +1,23 @@
+AMBERCITY — MAR, PONTE E CIDADE EXTERNA
+
+Esta versao adiciona:
+- A cidade externa importada do arquivo FBX: res://assets/external_city/grid_system.fbx
+- Um mar visual grande ao redor das duas areas
+- Uma ponte ligando a cidade original a cidade externa
+- Uma ilha com colisao para sustentar a nova cidade
+
+VERIFICACOES FEITAS AQUI:
+- O arquivo FBX foi copiado para o projeto
+- A cena principal foi trocada para res://cidade_expandida.tscn
+- O script res://scripts/expansao_mar_ponte.gd foi criado e referenciado
+- O ZIP final foi criado sem erros de compactacao
+- As referencias res:// novas existem no pacote
+
+NAO EXECUTADO NESTE AMBIENTE:
+- Nao abri o projeto no Godot Android
+- Nao confirmei o tempo de importacao do FBX no celular
+- Nao confirmei o tamanho visual exato da cidade importada apos o import do Godot
+
+OBSERVACAO IMPORTANTE:
+Na primeira vez que voce abrir esta versao no Godot 4, o editor precisara importar o FBX de 189 MB. Isso pode demorar e pode ser pesado no Android.
+Se a cidade externa aparecer grande ou pequena demais, o ajuste mais rapido e mudar 'escala_cidade_externa' no script scripts/expansao_mar_ponte.gd.

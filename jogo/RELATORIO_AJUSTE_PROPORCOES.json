@@ -1,0 +1,70 @@
+{
+  "modelo": "assets/Amber_animada.glb",
+  "ajustes_metros": {
+    "peito": 0.029,
+    "gluteos": 0.034,
+    "gluteos_lateral": 0.005
+  },
+  "camadas": [
+    {
+      "camada": "pele_torso",
+      "vertices": 31589,
+      "vertices_alterados": 26157,
+      "max_deslocamento_mm": 35.26,
+      "jacobiano_min": 0.955
+    },
+    {
+      "camada": "pele_pernas",
+      "vertices": 37552,
+      "vertices_alterados": 4009,
+      "max_deslocamento_mm": 21.8,
+      "jacobiano_min": 0.978
+    },
+    {
+      "camada": "jaqueta",
+      "vertices": 47567,
+      "vertices_alterados": 22051,
+      "max_deslocamento_mm": 21.33,
+      "jacobiano_min": 0.984
+    },
+    {
+      "camada": "top_interno",
+      "vertices": 7340,
+      "vertices_alterados": 5607,
+      "max_deslocamento_mm": 29.43,
+      "jacobiano_min": 1.0
+    },
+    {
+      "camada": "roupa_interior",
+      "vertices": 9307,
+      "vertices_alterados": 6529,
+      "max_deslocamento_mm": 35.27,
+      "jacobiano_min": 0.967
+    },
+    {
+      "camada": "jeans",
+      "vertices": 25632,
+      "vertices_alterados": 8993,
+      "max_deslocamento_mm": 35.22,
+      "jacobiano_min": 0.951
+    },
+    {
+      "camada": "camiseta",
+      "vertices": 31329,
+      "vertices_alterados": 20892,
+      "max_deslocamento_mm": 29.42,
+      "jacobiano_min": 0.999
+    }
+  ],
+  "clipes_preservados": [
+    "Idle",
+    "Walk",
+    "Run",
+    "Jump"
+  ],
+  "referencias_verificadas": 27,
+  "referencias_ausentes": [],
+  "camera_distancia_metros": 2.1,
+  "voz_programada_segundos": 5,
+  "teste_visual_android": "NAO EXECUTADO"
+}

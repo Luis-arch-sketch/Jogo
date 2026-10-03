@@ -1,0 +1,138 @@
+{
+  "archive": "AmberCity_ANDROID_REALISMO_REVISADO.zip",
+  "tested_count": 5065,
+  "passed": 5065,
+  "failed": 0,
+  "by_category": {
+    "zip_crc": 58,
+    "zip_paths": 2,
+    "resource_paths": 21,
+    "references": 6,
+    "glb_header": 3,
+    "glb_chunk": 4,
+    "buffer_view_bounds": 271,
+    "accessor_bounds": 243,
+    "accessor_layout": 243,
+    "node_transforms": 119,
+    "node_child_index": 118,
+    "node_mesh": 17,
+    "node_skin": 17,
+    "node_transform": 303,
+    "node_parent": 119,
+    "skin_joints": 101,
+    "inverse_bind": 101,
+    "primitive_required": 30,
+    "primitive_index_type": 30,
+    "primitive_finite_position": 30,
+    "primitive_finite_uv": 30,
+    "primitive_normals": 30,
+    "primitive_indices_in_range": 30,
+    "primitive_weights_in_range": 30,
+    "primitive_joint_range": 30,
+    "primitive_weight_sum": 30,
+    "skin_vertex_window": 750,
+    "geometry_index_window": 750,
+    "normal_map_tangent": 60,
+    "material": 86,
+    "textures": 28,
+    "embedded_image": 56,
+    "external_image": 31,
+    "alpha_cutout": 8,
+    "animation": 9,
+    "animation_track": 288,
+    "animation_key_sample": 960,
+    "script_animation": 4,
+    "original_texture": 16,
+    "eye_override": 3
+  },
+  "failures": [],
+  "glb": {
+    "nodes": 119,
+    "bones": 101,
+    "meshes": 17,
+    "vertices_by_primitive": 671018,
+    "triangles_by_primitive": 893492,
+    "animations": [
+      {
+        "name": "Idle",
+        "channels": 12,
+        "duration_s": 2.5,
+        "tracked_bones": [
+          "CC_Base_L_Upperarm",
+          "CC_Base_R_Upperarm",
+          "CC_Base_L_Forearm",
+          "CC_Base_R_Forearm",
+          "CC_Base_L_Thigh",
+          "CC_Base_R_Thigh",
+          "CC_Base_L_Calf",
+          "CC_Base_R_Calf",
+          "CC_Base_L_Foot",
+          "CC_Base_R_Foot",
+          "CC_Base_Hip",
+          "CC_Base_Spine01"
+        ]
+      },
+      {
+        "name": "Walk",
+        "channels": 12,
+        "duration_s": 1.0,
+        "tracked_bones": [
+          "CC_Base_L_Upperarm",
+          "CC_Base_R_Upperarm",
+          "CC_Base_L_Forearm",
+          "CC_Base_R_Forearm",
+          "CC_Base_L_Thigh",
+          "CC_Base_R_Thigh",
+          "CC_Base_L_Calf",
+          "CC_Base_R_Calf",
+          "CC_Base_L_Foot",
+          "CC_Base_R_Foot",
+          "CC_Base_Hip",
+          "CC_Base_Spine01"
+        ]
+      },
+      {
+        "name": "Run",
+        "channels": 12,
+        "duration_s": 0.6700000166893005,
+        "tracked_bones": [
+          "CC_Base_L_Upperarm",
+          "CC_Base_R_Upperarm",
+          "CC_Base_L_Forearm",
+          "CC_Base_R_Forearm",
+          "CC_Base_L_Thigh",
+          "CC_Base_R_Thigh",
+          "CC_Base_L_Calf",
+          "CC_Base_R_Calf",
+          "CC_Base_L_Foot",
+          "CC_Base_R_Foot",
+          "CC_Base_Hip",
+          "CC_Base_Spine01"
+        ]
+      },
+      {
+        "name": "Jump",
+        "channels": 12,
+        "duration_s": 0.8500000238418579,
+        "tracked_bones": [
+          "CC_Base_L_Upperarm",
+          "CC_Base_R_Upperarm",
+          "CC_Base_L_Forearm",
+          "CC_Base_R_Forearm",
+          "CC_Base_L_Thigh",
+          "CC_Base_R_Thigh",
+          "CC_Base_L_Calf",
+          "CC_Base_R_Calf",
+          "CC_Base_L_Foot",
+          "CC_Base_R_Foot",
+          "CC_Base_Hip",
+          "CC_Base_Spine01"
+        ]
+      }
+    ]
+  },
+  "limitations": [
+    "Testes de arquivos/GLB/animacoes apenas: executavel Godot indisponivel, importacao e renderizacao NAO testadas.",
+    "A aparencia dos olhos, FPS, naturalidade da caminhada e contato dos pes no Android nao podem ser confirmados pelos dados GLB."
+  ]
+}

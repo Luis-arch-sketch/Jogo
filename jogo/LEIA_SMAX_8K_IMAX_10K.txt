@@ -1,0 +1,18 @@
+AMBERCITY - PROJETO COMPLETO: sMax 8K + iMAX 10K
+
+Este ZIP e um projeto Godot 4 completo, baseado na versao CAMERA PROXIMA TERCEIRA PESSOA.
+Abra project.godot no Godot 4 para Android e execute a cena principal cidade_expandida.tscn.
+O menu original CONFIG. / PC -> GRAFICOS percorre:
+ECONOMIA -> EQUILIBRADO -> VISUAL -> MAX 4K -> sMax 8K -> iMAX 10K.
+
+A escolha e salva em user://amber_graficos.cfg, como na versao anterior.
+sMax e iMAX sao nomes de perfis com metas de resolucao, NAO promessa de 8K ou 10K real.
+O Android limita esses perfis a no maximo 2x a resolucao fisica da tela para
+reduzir o risco de travamentos; iMAX tambem habilita MSAA 2x, que pode pesar.
+O painel indica a resolucao 3D calculada. Nem o calculo nem o ZIP confirmam a
+resolucao efetivamente exibida ou desempenho no aparelho.
+
+A personagem, animacoes, camera, mapa, voz e controles foram preservados do ZIP base.
+A observacao sobre o joelho da Amber ainda nao foi corrigida nesta entrega.
+Este pacote foi verificado por integridade e referencias de arquivos, mas nao
+foi executado no Godot Android neste ambiente.

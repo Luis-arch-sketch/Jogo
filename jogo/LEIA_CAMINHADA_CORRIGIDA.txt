@@ -1,0 +1,21 @@
+CAMINHADA DA AMBER CORRIGIDA — 02/10/2026
+
+Abra o project.godot deste projeto no Godot e execute a cena principal.
+
+A caminhada foi refeita com flexão dos joelhos no sentido correto, balanço
+alternado dos braços, apoio e rolagem dos pés, movimento discreto do quadril
+e contrarrotação do tronco. A cadência acompanha a distância percorrida e
+a escala da Amber. As trocas entre parada, caminhada e corrida preservam
+a fase da passada. O salto e a cena Teste_Amber continuam funcionando.
+
+Arquivos da correção:
+  scripts/animacao_esqueleto_direta.gd
+  assets/amber_motion_baked.json
+
+Para aplicar em outra cópia deste mesmo AmberCity, substitua esses DOIS
+arquivos juntos e reinicie a execução. O JSON e o controlador usam o formato 2.
+
+Base: AmberCity_sMax8K_iMAX10K_PROJETO_COMPLETO.zip.
+Verificado no Godot 4.3 para Linux: carregamento da Amber, movimentação,
+transições, colisão com parede, salto e retorno ao chão. As poses também
+foram renderizadas com a malha original. Não foi executado em um Android.

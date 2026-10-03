@@ -1,0 +1,46 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="PackedScene" path="res://Amber.tscn" id="1_modelo"]
+[ext_resource type="Script" path="res://scripts/teste_amber.gd" id="2_teste"]
+
+[sub_resource type="StandardMaterial3D" id="PisoMaterial"]
+albedo_color = Color(0.30, 0.34, 0.36, 1)
+roughness = 0.95
+
+[sub_resource type="BoxMesh" id="PisoMesh"]
+size = Vector3(5, 0.08, 5)
+material = SubResource("PisoMaterial")
+
+[sub_resource type="ProceduralSkyMaterial" id="SkyMaterial"]
+sky_top_color = Color(0.28, 0.48, 0.68, 1)
+sky_horizon_color = Color(0.72, 0.75, 0.78, 1)
+
+[sub_resource type="Sky" id="Sky"]
+sky_material = SubResource("SkyMaterial")
+
+[sub_resource type="Environment" id="Environment"]
+background_mode = 2
+sky = SubResource("Sky")
+ambient_light_source = 2
+ambient_light_energy = 0.7
+
+[node name="Teste_Amber" type="Node3D"]
+script = ExtResource("2_teste")
+
+[node name="AmberVisual" parent="." instance=ExtResource("1_modelo")]
+
+[node name="Piso" type="MeshInstance3D" parent="."]
+position = Vector3(0, -0.04, 0)
+mesh = SubResource("PisoMesh")
+
+[node name="Sol" type="DirectionalLight3D" parent="."]
+rotation_degrees = Vector3(-45, -30, 0)
+light_energy = 1.2
+shadow_enabled = true
+
+[node name="Ambiente" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.981956, -0.18911, 0, 0.18911, 0.981956, 0, 1.55, 3.5)
+current = true

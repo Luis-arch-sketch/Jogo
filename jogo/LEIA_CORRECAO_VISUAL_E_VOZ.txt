@@ -1,0 +1,8 @@
+Base usada: AmberCity_MAPA_240M_AMBER_159CM_MAX4K.zip
+
+Mudancas desta entrega:
+- animacao direta suavizada para reduzir poses exageradas de braco/perna;
+- bracos abaixados e menos rigidos;
+- audio substituido pelo mp3 enviado pelo Luis (Bella).
+
+Nenhuma legenda extra foi adicionada.

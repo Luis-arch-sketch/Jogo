@@ -1,0 +1,29 @@
+AMBERCITY — CIDADE DA AMBER EM 500 x 500 METROS
+
+NOVO: a area de solo e a colisao da cidade original agora medem 500 x 500 metros.
+Preservados o centro original, Amber e suas animacoes, a camera proxima e voz com espera de 5 segundos.
+O script scripts/bairros_500.gd adiciona 16 setores externos com 128 construcoes:
+64 casas e 64 predios. Cada construcao tem colisao simples; paredes, telhados,
+janelas e portas usam MultiMesh por setor para reduzir a quantidade de desenhos.
+A avenida central liga a Amber ate a ponte, que agora comeca proxima a margem x=250.
+A nova cidade do FBX permanece posicionada na ilha em x=475, com mar maior em volta.
+
+ATENCAO ANDROID:
+O arquivo grid_system.fbx tem cerca de 189 MB. Importar no Godot Android
+pode consumir muita memoria e demorar. O arquivo foi mantido no projeto,
+mas este ambiente nao tem Godot/Blender para importar, renderizar ou testar
+fps/colisao na tela. Os 128 edificios novos sao geometrias simples, nao
+modelos realistas detalhados. O FBX da outra cidade ainda pode exigir ajustes
+de escala/texturas apos ser importado no celular.
+
+INSTRUCOES:
+1. Extraia o ZIP numa pasta nova.
+2. Abra o project.godot no Godot 4 para Android e aguarde a importacao.
+3. Rode a cena principal cidade_expandida.tscn.
+4. Se o FBX for pesado demais, informe o erro/mensagem e faremos versao com
+   selecao de setores sem remover a cidade ou a ponte.
+
+VERIFICACAO PARCIAL DO FBX: ele contem 20 geometrias, incluindo 13 elementos Building.
+O terreno importado tem aprox. 238 m de largura horizontal em X e ~200 m em Z
+(antes da conversao de eixos no Godot). A ilha foi aumentada para 300 x 240 m.
+O FBX possui malhas muito grandes de vegetacao e caminhos; desempenho Android nao confirmado.

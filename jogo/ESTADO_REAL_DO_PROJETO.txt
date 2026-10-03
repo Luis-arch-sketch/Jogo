@@ -1,0 +1,17 @@
+AMBERCITY — STATUS VERIFICADO
+
+REALMENTE CONFERIDO FORA DO GODOT:
+- GLB possui 101 ossos e quatro animacoes procedurais (Idle, Walk, Run, Jump).
+- Modelo usa texturas extraidas do FBX original, rosto ate 2048x2048, olhos corrigidos preservados.
+- 4.158 amostras de vertices de botas, 25 instantes por clip: nenhuma penetracao maior que 1,5 cm no solo plano simulado.
+- Projeto inicia Android no perfil equilibrado com sombras e tenta recuar para economia se a taxa de quadros medida ficar baixa.
+- A auditoria automatizada verifica conteudo, estrutura e referencias, nao funcionamento visual.
+
+NAO CONFIRMADO:
+- Renderizacao real do rosto, olhos e cabelo no Godot 4 Android.
+- FPS no aparelho especifico de Luis.
+- Contato dos pes em terreno inclinado e naturalidade subjetiva de caminhar/correr.
+- Mocap original do FBX nao foi transferido; as quatro animacoes sao procedurais.
+
+AUSENCIA DE EXECUTAVEL:
+Nao existe Godot executavel acessivel neste ambiente. Nao declarar o jogo 100% pronto antes de um teste visual real.

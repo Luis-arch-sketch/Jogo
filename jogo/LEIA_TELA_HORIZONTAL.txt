@@ -1,0 +1,16 @@
+AMBERCITY — TELA HORIZONTAL (PAISAGEM)
+
+CORRECAO: project.godot usava window/handheld/orientation=1, que significa
+RETRATO (celular em pe). Agora usa 0, que significa PAISAGEM (deitado).
+Ao iniciar o jogo em Android/iOS, scripts/controles_android.gd tambem
+solicita a orientacao horizontal com DisplayServer.screen_set_orientation().
+A proporcao base do jogo continua 960x540 (16:9), e os analogicos acompanham
+as dimensoes da janela.
+
+O menu de graficos, incluido MAX 4K, e os ajustes de caminhada e pulo da
+ultima entrega foram preservados. Execute cidade.tscn ou o projeto novo.
+
+OBS.: O projeto define a orientacao DA JANELA DO JOGO. O aplicativo
+editor do Godot para Android pode continuar com sua propria orientacao.
+Se a previsualizacao embutida no editor nao girar, abra o jogo em uma janela
+separada ou use uma exportacao Android.

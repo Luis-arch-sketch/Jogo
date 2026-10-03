@@ -1,0 +1,135 @@
+[gd_scene load_steps=18 format=3]
+
+[ext_resource type="PackedScene" path="res://Amber.tscn" id="1_amber"]
+[ext_resource type="PackedScene" path="res://predios_originais.tscn" id="2_predios"]
+[ext_resource type="Script" path="res://scripts/camera_cidade.gd" id="3_camera"]
+[ext_resource type="Script" path="res://scripts/controles_android.gd" id="4_controles"]
+[ext_resource type="Script" path="res://scripts/desempenho.gd" id="5_desempenho"]
+[ext_resource type="Script" path="res://scripts/ruas_realistas.gd" id="6_ruas"]
+[ext_resource type="Script" path="res://scripts/bairros_expandidos.gd" id="7_bairros"]
+
+[ext_resource type="Script" path="res://scripts/bairros_500.gd" id="8_bairros500"]
+[ext_resource type="Script" path="res://scripts/mapa_interativo.gd" id="9_mapa"]
+
+[sub_resource type="ProceduralSkyMaterial" id="Ceu_Natural"]
+sky_top_color = Color(0.34, 0.51, 0.70, 1)
+sky_horizon_color = Color(0.80, 0.83, 0.84, 1)
+ground_horizon_color = Color(0.55, 0.57, 0.54, 1)
+ground_bottom_color = Color(0.22, 0.24, 0.23, 1)
+use_debanding = true
+
+[sub_resource type="Sky" id="Ceu"]
+sky_material = SubResource("Ceu_Natural")
+
+[sub_resource type="Environment" id="Ambiente_Natural"]
+background_mode = 2
+sky = SubResource("Ceu")
+ambient_light_source = 2
+ambient_light_color = Color(0.66, 0.73, 0.81, 1)
+ambient_light_energy = 0.92
+reflected_light_source = 0
+tonemap_mode = 2
+glow_enabled = true
+glow_bloom = 0.07
+glow_intensity = 0.035
+
+[sub_resource type="StandardMaterial3D" id="Material_Chao"]
+albedo_color = Color(0.32, 0.41, 0.34, 1)
+roughness = 1.0
+
+[sub_resource type="BoxMesh" id="Mesh_Chao"]
+size = Vector3(500, 0.2, 500)
+material = SubResource("Material_Chao")
+
+[sub_resource type="BoxShape3D" id="Forma_Chao"]
+size = Vector3(500, 0.2, 500)
+
+[sub_resource type="BoxShape3D" id="Forma_Limite_NS"]
+size = Vector3(0.8, 6, 500)
+
+[sub_resource type="BoxShape3D" id="Forma_Limite_LO"]
+size = Vector3(500, 6, 0.8)
+
+[node name="Cidade" type="Node3D"]
+
+[node name="Ambiente" type="WorldEnvironment" parent="."]
+environment = SubResource("Ambiente_Natural")
+
+[node name="Chao" type="StaticBody3D" parent="."]
+position = Vector3(0, -0.1, 0)
+collision_layer = 1
+collision_mask = 1
+
+[node name="Visual" type="MeshInstance3D" parent="Chao"]
+mesh = SubResource("Mesh_Chao")
+
+[node name="Colisao" type="CollisionShape3D" parent="Chao"]
+shape = SubResource("Forma_Chao")
+
+[node name="Limite_Oeste" type="StaticBody3D" parent="."]
+position = Vector3(-249.6, 3, 0)
+
+[node name="Colisao" type="CollisionShape3D" parent="Limite_Oeste"]
+shape = SubResource("Forma_Limite_NS")
+
+[node name="Limite_Leste" type="StaticBody3D" parent="."]
+position = Vector3(249.6, 3, 0)
+
+[node name="Colisao" type="CollisionShape3D" parent="Limite_Leste"]
+shape = SubResource("Forma_Limite_NS")
+
+[node name="Limite_Norte" type="StaticBody3D" parent="."]
+position = Vector3(0, 3, -249.6)
+
+[node name="Colisao" type="CollisionShape3D" parent="Limite_Norte"]
+shape = SubResource("Forma_Limite_LO")
+
+[node name="Limite_Sul" type="StaticBody3D" parent="."]
+position = Vector3(0, 3, 249.6)
+
+[node name="Colisao" type="CollisionShape3D" parent="Limite_Sul"]
+shape = SubResource("Forma_Limite_LO")
+
+[node name="Sol" type="DirectionalLight3D" parent="."]
+rotation_degrees = Vector3(-51, -33, 0)
+light_color = Color(1, 0.93, 0.83, 1)
+light_energy = 1.04
+shadow_enabled = true
+directional_shadow_mode = 1
+directional_shadow_max_distance = 56.0
+
+[node name="Luz_Cena_Rosto" type="OmniLight3D" parent="."]
+position = Vector3(0, 2.15, 8.15)
+light_color = Color(1, 0.96, 0.93, 1)
+light_energy = 0.34
+omni_range = 5.0
+shadow_enabled = false
+
+[node name="Amber" parent="." instance=ExtResource("1_amber")]
+position = Vector3(0, 0.02, 7)
+
+[node name="Predios_Originais" parent="." instance=ExtResource("2_predios")]
+
+[node name="Detalhes_Urbanos" type="Node3D" parent="."]
+script = ExtResource("6_ruas")
+
+[node name="Bairros_Expandidos" type="Node3D" parent="."]
+script = ExtResource("7_bairros")
+
+[node name="Bairros_500" type="Node3D" parent="."]
+script = ExtResource("8_bairros500")
+
+[node name="Desempenho" type="Node" parent="."]
+script = ExtResource("5_desempenho")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-1, 0, 0, 0, 0.9907, 0.136, 0, 0.136, -0.9907, 0, 1.65, 3.65)
+current = true
+script = ExtResource("3_camera")
+
+[node name="Controles_Android" type="CanvasLayer" parent="."]
+script = ExtResource("4_controles")
+
+[node name="Mapa_Interativo" type="CanvasLayer" parent="."]
+layer = 20
+script = ExtResource("9_mapa")

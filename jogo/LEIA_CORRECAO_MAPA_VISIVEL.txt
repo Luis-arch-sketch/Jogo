@@ -1,0 +1,21 @@
+AMBERCITY — MAPA VISIVEL + CAMERA DE TERCEIRA PESSOA
+
+ERRO IDENTIFICADO NOS ARQUIVOS:
+No script anterior, accept_event() era chamado no proprio CanvasLayer (que nao possui esse metodo). Isso pode impedir o carregamento do script e, portanto, o aparecimento do mapa.
+
+CORRECOES DESTE PACOTE:
+- Os dois toques do minimapa agora chamam _mini.accept_event() no Control apropriado.
+- A camada do mapa foi definida como 20, acima dos controles Android.
+- A cena principal continua cidade_expandida.tscn e inclui Mapa_Interativo.
+- O nome deste projeto mudou para AmberCity - MAPA VISIVEL CAMERA 3P para distinguir das versoes antigas.
+- Camera terceira pessoa, cidades, ponte, mar, personagens, audio e texturas preservados.
+
+TESTE NO SEU CELULAR:
+1. Extraia este ZIP em uma pasta NOVA. Nao sobrescreva uma pasta de outra versao.
+2. No Godot para Android, importe o project.godot desta pasta.
+3. Confirme que o nome do projeto e AmberCity - MAPA VISIVEL CAMERA 3P.
+4. Execute o PROJETO (nao a cena de teste). O botao MAPA (TOCAR) deve surgir no canto superior esquerdo.
+5. Toque no botao para abrir o mapa completo com Amber, ponte, mar e segunda cidade.
+
+VERIFICADO: codigo do mapa corrigido, referencias res://, integridade do ZIP e preservacao dos outros arquivos.
+NAO VERIFICADO: execucao e renderizacao no Godot Android. Se nao surgir, envie print da aba Debugger/Erros do Godot, incluindo o nome do projeto.

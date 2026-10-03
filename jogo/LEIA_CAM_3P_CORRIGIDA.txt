@@ -1,0 +1,20 @@
+AMBERCITY - CAMERA EM TERCEIRA PESSOA (REVISAO)
+
+ABRA O PROJETO CERTO NO GODOT ANDROID:
+1. Extraia ESTE ZIP numa pasta NOVA, sem misturar com pastas anteriores.
+2. No Godot 4, volte ao Gerenciador de Projetos e importe o project.godot desta nova pasta.
+3. O nome deste projeto deve ser: AmberCity - CAMERA 3P CORRIGIDA.
+4. Aperte Executar Projeto (triangulo na parte de cima), nao Executar Cena de teste.
+5. A camera inicia atras da Amber e permite girar com o controle de camera.
+
+ALTERACOES IMPLEMENTADAS:
+- A camera e definida como ativa e recupera a prioridade se outra camera importada assumir a visao.
+- Posicao inicial no arquivo cidade.tscn ja fica atras da Amber, mesmo antes do script rodar.
+- Distancia normal de 3,35 m, e minima de 3,10 m (nunca avanca para dentro da personagem).
+- Em caso de muro, procura posicoes laterais antes de se aproximar; mantem o enquadramento em 3a pessoa.
+- O projeto tem nome diferente para identificar qual versao voce esta executando.
+- Mapa, ponte, duas cidades, animacoes e voz foram preservados.
+
+VERIFICADO NO ARQUIVO: ZIP integro e arquivos inalterados comparados via CRC/sha256.
+NAO TESTADO: tela e funcionamento no Godot 4 Android. Nao ha Godot executavel neste ambiente.
+Se ainda aparecer primeira pessoa, mande uma captura com o nome do projeto no Gerenciador do Godot e uma captura da tela do jogo. Isso ajudara a descobrir se a cena aberta e outra.

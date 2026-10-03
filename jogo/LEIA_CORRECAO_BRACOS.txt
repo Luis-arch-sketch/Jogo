@@ -1,0 +1,18 @@
+AMBERCITY — CAMINHADA COM OS BRACOS SOLTOS
+
+Corrigi o MOVIMENTO dos bracos em assets/amber_motion_baked.json.
+A caminhada agora usa um balanco frontal/traseiro perceptivel dos ombros,
+com braco esquerdo e direito alternando em oposicao as pernas. Os cotovelos
+se dobram durante o movimento e ficam ligeiramente afastados do tronco.
+A corrida usa um balanco mais amplo e cotovelos mais flexionados.
+
+Mantidos: pose de parada, pulo com pernas encolhendo, modo MAX 4K,
+tela horizontal, projeto da cidade e texturas da Amber.
+
+Para conferir: extraia TODO o ZIP numa pasta nova, importe o project.godot,
+abra Teste_Amber.tscn e toque ANDAR ou CORRER. Depois rode cidade.tscn.
+Nao misture arquivos de versoes antigas no mesmo diretorio.
+
+Validacao feita: arquivo JSON de movimentos, amplitudes matematicas,
+referencias do projeto, GLB e ZIP. A aparencia final em movimento ainda
+precisa ser conferida no Godot Android real.

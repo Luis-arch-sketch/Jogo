@@ -1,0 +1,19 @@
+AMBERCITY — AJUSTE VISUAL DO MODELO REAL
+
+Esta versao ALTERA os materiais da personagem 3D que ja existe no jogo:
+- Oculta a camada extra de fios de sobrancelha, mantendo a sobrancelha-base.
+- Afina o recorte do cabelo e ajusta a cor para castanho acinzentado.
+- Mantem rosto, rig, animacoes e olhos da versao anterior.
+
+As imagens da pasta REFERENCIAS_VISUAIS_NAO_SAO_MODELOS_3D sao APENAS
+referencias da aparencia desejada. A imagem fotorrealista do editor foi
+criada como conceito 2D, NAO como captura de um Godot executando o modelo.
+Este ZIP nao reproduz exatamente o rosto e o penteado ilustrados.
+
+Para chegar a esse visual exato, e necessario remodelar penteado e face ou
+obter um modelo 3D com essa aparencia, riggar e importar no Godot.
+A edicao real do material nao altera a geometria facial nem adiciona
+mechas de cabelo que nao existem no modelo.
+
+Nao foi possivel executar a renderizacao em um Godot Android neste ambiente.
+Abra AmberCity_Godot4_Android/project.godot no Godot 4 para conferir o resultado.

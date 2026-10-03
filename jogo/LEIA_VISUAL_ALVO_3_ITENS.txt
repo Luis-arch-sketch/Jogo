@@ -1,0 +1,19 @@
+AMBERCITY — REFINO VISUAL MAIS AGRESSIVO
+
+Objetivos atacados nesta versao:
+1) rosto mais proximo da referencia;
+2) cabelo mais parecido;
+3) pele mais bonita no jogo.
+
+Mudancas concretas feitas:
+- novas versoes refinadas das texturas de pele, cabelo e sobrancelha;
+- pele do rosto com tom mais suave e normal menos agressivo;
+- cabelo com cor castanho-acinzentada mais proxima da referencia;
+- franja preservando mais fios finos;
+- sobrancelha-base mais fina e escura;
+- camada extra de sobrancelha/fios continua desligada.
+
+Limite real:
+esta versao ainda usa o mesmo MODELO 3D base. Portanto, ela pode chegar mais
+perto, mas nao ficar identica a imagem 2D de referencia sem remodelar a malha
+facial e o penteado.

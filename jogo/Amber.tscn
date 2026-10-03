@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/Amber_animada.glb" id="1_amber"]
+[ext_resource type="Script" path="res://scripts/personagem.gd" id="2_fisica"]
+[ext_resource type="Script" path="res://scripts/animacao_esqueleto_direta.gd" id="3_animacao"]
+
+[sub_resource type="CapsuleShape3D" id="Capsula"]
+radius = 0.30
+height = 1.59
+
+[node name="Amber" type="CharacterBody3D"]
+collision_layer = 1
+collision_mask = 1
+floor_snap_length = 0.25
+script = ExtResource("2_fisica")
+
+[node name="Colisao" type="CollisionShape3D" parent="."]
+position = Vector3(0, 0.795, 0)
+shape = SubResource("Capsula")
+
+[node name="Modelo_Amber" parent="." instance=ExtResource("1_amber")]
+rotation = Vector3(0, 3.14159265, 0)
+scale = Vector3(0.9451397, 0.9451397, 0.9451397)
+
+[node name="Animacao_Confiavel" type="Node" parent="."]
+script = ExtResource("3_animacao")

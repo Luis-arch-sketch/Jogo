@@ -1,0 +1,23 @@
+AMBERCITY — BRACOS AFASTADOS + JOELHOS PARA FRENTE
+
+Versao baseada na ultima entrega BRACOS_SOLTOS_ANDANDO_MAX_4K.
+
+Na caminhada e corrida:
+- ombros orientados mais para fora: cotovelos e maos afastados do tronco;
+- bracos continuam alternando para frente e para tras, em oposicao as pernas;
+- cotovelos dobrados em vez de bracos retos ou pose de T.
+
+No pulo:
+- coxas elevam os JOELHOS para a FRENTE da personagem;
+- canelas se dobram de volta em direcao ao corpo, deixando os PES
+  ATRAS DOS JOELHOS, sem jogar as canelas para a frente;
+- os pes sao recolhidos durante o salto e estendidos perto da aterrissagem.
+
+Mantidos: MAX 4K, tela horizontal, textura da personagem, cidade e controles.
+
+ABRIR: extrair TUDO em uma pasta NOVA e importar o project.godot.
+Para verificar: executar Teste_Amber.tscn e selecionar Andar / Correr / Pular.
+
+Verificado: geometria e poses por calculo sobre o esqueleto real do GLB,
+JSON e integridade do ZIP. A renderizacao no seu Godot Android nao foi
+executada aqui; o aspecto final deve ser conferido no celular.

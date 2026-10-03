@@ -1,0 +1,79 @@
+[gd_scene load_steps=16 format=3]
+[ext_resource type="PackedScene" path="res://assets/predios_originais/escritorio_atlanta.glb" id="1_model"]
+[ext_resource type="PackedScene" path="res://assets/predios_originais/predio_apartamentos.glb" id="2_model"]
+[ext_resource type="PackedScene" path="res://assets/predios_originais/complexo_residencial.glb" id="3_model"]
+[ext_resource type="PackedScene" path="res://assets/predios_originais/casa_com_interior.glb" id="4_model"]
+[sub_resource type="StandardMaterial3D" id="Calcada"]
+albedo_color = Color(0.52, 0.54, 0.56, 1)
+roughness = 0.95
+[sub_resource type="StandardMaterial3D" id="Asfalto"]
+albedo_color = Color(0.16, 0.18, 0.20, 1)
+roughness = 0.95
+[sub_resource type="StandardMaterial3D" id="Tinta"]
+albedo_color = Color(0.92, 0.89, 0.70, 1)
+roughness = 0.9
+[sub_resource type="BoxMesh" id="M_Calcada"]
+size = Vector3(80, 0.002, 80)
+material = SubResource("Calcada")
+[sub_resource type="BoxMesh" id="M_Rua_NS"]
+size = Vector3(9, 0.002, 80)
+material = SubResource("Asfalto")
+[sub_resource type="BoxMesh" id="M_Rua_LO"]
+size = Vector3(80, 0.002, 9)
+material = SubResource("Asfalto")
+[sub_resource type="BoxMesh" id="M_Praca"]
+size = Vector3(5.0, 0.002, 5.0)
+material = SubResource("Calcada")
+[sub_resource type="BoxShape3D" id="Col_1"]
+size = Vector3(6.08306, 21.19988, 9.68509)
+[sub_resource type="BoxShape3D" id="Col_2"]
+size = Vector3(10.2, 13, 21.2)
+[sub_resource type="BoxShape3D" id="Col_3"]
+size = Vector3(16.39973, 14.05702, 22.78505)
+[sub_resource type="BoxShape3D" id="Col_4"]
+size = Vector3(8.26694, 7.33962, 8.70939)
+[node name="Predios_Originais" type="Node3D"]
+[node name="Calcadas" type="MeshInstance3D" parent="."]
+mesh = SubResource("M_Calcada")
+position = Vector3(0, 0.003, 0)
+[node name="Rua_Norte_Sul" type="MeshInstance3D" parent="."]
+mesh = SubResource("M_Rua_NS")
+position = Vector3(0, 0.009, 0)
+[node name="Rua_Leste_Oeste" type="MeshInstance3D" parent="."]
+mesh = SubResource("M_Rua_LO")
+position = Vector3(0, 0.011, 0)
+[node name="Praca_Amber" type="MeshInstance3D" parent="."]
+mesh = SubResource("M_Praca")
+position = Vector3(0, 0.016, 0)
+[node name="Escritorio_Atlanta" type="StaticBody3D" parent="."]
+position = Vector3(-18, 0.04, -18)
+[node name="Modelo" parent="Escritorio_Atlanta" instance=ExtResource("1_model")]
+position = Vector3(-2.74265, -0.81341, 4.68068)
+scale = Vector3(0.1, 0.1, 0.1)
+[node name="Colisao_Externa" type="CollisionShape3D" parent="Escritorio_Atlanta"]
+position = Vector3(0, 10.59994, 0)
+shape = SubResource("Col_1")
+[node name="Predio_Apartamentos" type="StaticBody3D" parent="."]
+position = Vector3(17, 0.04, -18)
+[node name="Modelo" parent="Predio_Apartamentos" instance=ExtResource("2_model")]
+position = Vector3(3.6, 0, 10.2)
+scale = Vector3(1, 1, 1)
+[node name="Colisao_Externa" type="CollisionShape3D" parent="Predio_Apartamentos"]
+position = Vector3(0, 6.5, 0)
+shape = SubResource("Col_2")
+[node name="Complexo_Residencial" type="StaticBody3D" parent="."]
+position = Vector3(-18, 0.04, 18)
+[node name="Modelo" parent="Complexo_Residencial" instance=ExtResource("3_model")]
+position = Vector3(0.04594, 0, -0.7585)
+scale = Vector3(0.5, 0.5, 0.5)
+[node name="Colisao_Externa" type="CollisionShape3D" parent="Complexo_Residencial"]
+position = Vector3(0, 7.02851, 0)
+shape = SubResource("Col_3")
+[node name="Casa_Com_Interior" type="StaticBody3D" parent="."]
+position = Vector3(17, 0.04, 18)
+[node name="Modelo" parent="Casa_Com_Interior" instance=ExtResource("4_model")]
+position = Vector3(0.028, 0.00056, -0.21123)
+scale = Vector3(1, 1, 1)
+[node name="Colisao_Externa" type="CollisionShape3D" parent="Casa_Com_Interior"]
+position = Vector3(0, 3.66981, 0)
+shape = SubResource("Col_4")

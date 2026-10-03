@@ -1,0 +1,24 @@
+AMBERCITY — REVISAO BRAÇOS / CAMÊRA / VOZ (Godot 4 no Android)
+
+Esta versao foi gerada a partir de AmberCity_Bella(1).zip; nao sobrescreve a anterior.
+
+CORRECOES NO CODIGO:
+- Postura: ombros abaixados proximo ao tronco em Idle e durante movimento;
+  preservados os dados de balanco e os clipes Idle, Walk, Run, Jump.
+- Camera de terceira pessoa: distancia padrao de 3.00 m para 2.10 m;
+  campo de visao e controles mantidos.
+- Voz de Amber: o audio original amber_bella.mp3 comeca somente quando o
+  Timer de 5 segundos dispara, uma unica vez. Nao toca ao abrir e nao ha
+  mais repeticoes aleatorias. Timer pausa se a arvore for pausada.
+
+NO CELULAR (IMPORTANTE):
+1. Extraia este ZIP em uma NOVA pasta no Android; nao misture os arquivos
+   com os do ZIP antigo.
+2. No editor Godot 4 Android, abra o project.godot DESTA pasta e execute.
+3. Espere cinco segundos para ouvir a voz; veja a Amber parada e andando.
+4. Se a pose antiga continuar, confirme que abriu o novo project.godot;
+   se preciso, feche e abra o projeto para reimportar Amber_animada.glb.
+
+VERIFICACAO: integridade do ZIP, referencias locais e teste numerico
+independente de orientacao dos bracos; a aparencia FINAL, som no alto-falante
+ e taxa de quadros precisam de teste no seu celular, nao foram executados aqui.

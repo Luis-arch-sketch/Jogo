@@ -1,0 +1,38 @@
+AMBERCITY - VERSAO COMPACTA ABAIXO DE 25 MB
+
+Extraia o ZIP e importe o arquivo project.godot da pasta
+AmberCity_CAMERA_PROXIMA_TERCEIRA_PESSOA no Godot.
+
+Os 116 arquivos do projeto recebido continuam presentes nos mesmos caminhos.
+Esta versao reduz resolucao de texturas e precisao numerica de atributos dos
+modelos para atender ao limite de tamanho; nao e compactacao sem perdas.
+
+PRESERVADO:
+- Cenas, scripts, configuracoes, audio e dados de movimento: conteudo original.
+- Amber: 17 meshes, 101 ossos, 893.492 triangulos e os quatro clips
+  Idle, Walk, Run e Jump.
+- Indices dos triangulos, pesos de influencia, indices dos ossos, matrizes de
+  vinculacao, hierarquia e dados das animacoes foram mantidos exatamente.
+- Todos os modelos de predios e todas as variantes de texturas continuam no ZIP.
+
+REDUCOES:
+- Rosto da variante visual_refino_max: ate 1024 pixels.
+- Corpo dessa variante: ate 512 pixels; cabelo com transparencia: ate 384 pixels.
+- Texturas alternativas, roupas e cidade: em geral ate 256 pixels.
+- Mapas normais: ate 256 pixels, ou 512 no rosto.
+- Imagens incorporadas nos predios: ate 384 pixels.
+- Referencias visuais: ate 768 pixels.
+- Posicoes, normais, tangentes e UVs de atributos elegiveis foram arredondadas
+  conservando o formato float32. Erro maximo por componente de posicao:
+  0,00003052 unidade. A contagem e os indices dos triangulos nao mudaram.
+- As texturas ja incorporadas no modelo Amber_animada.glb foram mantidas.
+- ZIP padrao Deflate; nenhum decodificador ou extensao GLTF foi acrescentado.
+
+VERIFICACAO:
+Integridade do ZIP, presenca dos arquivos, decodificacao de 134 imagens
+externas/incorporadas e estrutura dos cinco GLBs verificadas. Os dados de
+animacao e esqueleto foram comparados com o original. Nao foi executado o
+Godot nem realizado teste no celular.
+
+Os documentos e relatorios anteriores continuam no projeto como historico.
+Para as resolucoes e a compactacao desta versao, considere esta nota.

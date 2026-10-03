@@ -1,0 +1,20 @@
+AMBERCITY — CORRECAO DA POSE DE T
+
+1. Extraia o ZIP em uma NOVA pasta no Android, sem mesclar com um AmberCity antigo.
+2. No Godot Android, importe o project.godot DENTRO da pasta AmberCity_Godot4_Android_CORRECAO_TPOSE.
+3. Aguarde a importacao do Amber_animada.glb terminar, depois execute cidade.tscn.
+4. No jogo, aparece brevemente "AMBER: 12 OSSOS CONTROLADOS" no topo se o
+   Skeleton3D e o controlador estiverem ativos. Se surgir erro em laranja,
+   envie uma captura da mensagem.
+5. Para observar a caminhada parado no mesmo lugar, abra Teste_Amber.tscn.
+
+Esta versao utiliza os 4 movimentos extraidos do GLB e os aplica
+DIRETAMENTE nos 12 ossos principais da Amber, sem depender da importacao
+ou do nome das faixas no AnimationPlayer. A pose Parada dobra os bracos
+58 graus a partir da pose T original do arquivo.
+
+O arquivo GLB ainda tem a pose de T como repouso original. O no
+Animacao_Confiavel usa @tool para tentar mostrar a pose Parada tambem quando
+voce abre Amber.tscn no editor, alem de animar quando o jogo roda.
+Nao foi possivel executar Godot para Android neste ambiente: o indicador
+em tela e o Teste_Amber.tscn permitem checar o funcionamento no celular.

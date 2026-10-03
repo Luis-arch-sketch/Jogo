@@ -1,0 +1,22 @@
+AMBERCITY - TESTE REAL DE ANIMACAO NO SEU GODOT 4 / ANDROID
+
+1. Extraia o ZIP inteiro em uma pasta. NAO importe o ZIP diretamente.
+2. No Godot 4 para Android, importe AmberCity_Godot4_Android/project.godot.
+3. Deixe as importacoes dos modelos terminarem.
+4. No painel FileSystem do Godot, abra Teste_Amber.tscn.
+5. Execute a cena atual (icone Play Current Scene / Executar cena atual).
+6. Veja as linhas na parte superior esquerda: ossos, clips e movimento real
+   calculado pelos ossos depois da importacao do GLB neste aparelho.
+7. Toque Parada, Andar, Correr e Pular. Toque GIRAR para ver a Amber de lado.
+8. Depois execute o projeto normalmente para abrir cidade.tscn.
+
+Se houver FALHA: o texto informa o que nao foi importado. Abra a guia
+Saida/Output e procure por 'AmberCity'. Nao confunda verificacao numerica
+fora do Godot com um teste feito no aparelho.
+
+ATENCAO: estes 4 clips sao movimentos procedurais criados sobre os ossos
+originais da Amber; NAO sao a captura de movimento nativa do FBX original.
+O FBX original segue incluido fora da pasta do projeto.
+
+Esta versao usa texturas ORIGINAIS do FBX (rosto ate 2K); NAO sao texturas nativas 4K.
+O modelo e pesado e pode exceder a memoria de aparelhos Android mais simples.
