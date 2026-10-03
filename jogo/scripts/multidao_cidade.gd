@@ -15,6 +15,7 @@ var pronto: bool = false
 func _ready() -> void:
     if Engine.is_editor_hint():
         return
+    add_to_group("multidao")
     randomize()
     var bruto: Variant = null
     if FileAccess.file_exists(ARQUIVO_PERFIS):

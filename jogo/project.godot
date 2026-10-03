@@ -3,7 +3,7 @@ config_version=5
 
 [application]
 config/name="AmberCity - sMax 8K e iMAX 10K"
-run/main_scene="res://cidade_expandida.tscn"
+run/main_scene="res://cidade.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 
 [display]

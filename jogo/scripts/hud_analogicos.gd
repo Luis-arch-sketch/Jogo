@@ -202,7 +202,9 @@ func _tentar_abrir_loja() -> void:
     if armas == null:
         return
     if loja != null and loja is Node3D:
-        var amber_pos: Vector3 = amber.global_position if amber != null else (get_tree().current_scene.get_node("Amber") as Node3D).global_position
+        if amber == null:
+            return
+        var amber_pos: Vector3 = amber.global_position
         if amber_pos.distance_to((loja as Node3D).global_position) > 16.0:
             _feedback = "Va ate a LOJA DE ARMAS (predio cinza com letreiro) para comprar!"
             _feedback_tempo = 2.5

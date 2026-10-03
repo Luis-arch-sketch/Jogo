@@ -137,7 +137,10 @@ func atirar() -> void:
     var space := get_world_3d().direct_space_state
     var fim := origem + direcao * alcance
     var query := PhysicsRayQueryParameters3D.create(origem, fim)
-    query.exclude = [get_tree().current_scene.find_child("Amber", true, false)] if get_tree().current_scene != null else []   # nao acertar a propria Amber
+    var _cena_atual := get_tree().current_scene
+    var _amber_node: Node = (_cena_atual.find_child("Amber", true, false) if _cena_atual != null else null)
+    if _amber_node != null:
+        query.exclude = [_amber_node]   # nao acertar a propria Amber
     var resultado := space.intersect_ray(query)
     var ponto_fim: Vector3 = fim
     if not resultado.is_empty():
@@ -172,6 +175,8 @@ func _golpe_corpo_a_corpo(origem: Vector3, direcao: Vector3) -> void:
 func _achar_multidao() -> Node:
     var cidade := get_tree().current_scene
     var direto := cidade.find_child("Multidao_Cidade", true, false) if cidade != null else null
+    if direto == null:
+        direto = get_tree().get_first_node_in_group("multidao")
     return direto
 
 # Linha luminosa curta mostrando a trajetória da bala.
