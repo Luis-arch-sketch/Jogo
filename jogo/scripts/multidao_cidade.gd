@@ -66,9 +66,58 @@ func _process(_delta: float) -> void:
             return
     var foco: Vector3 = camera.global_position
     for m in moradores:
-        var distancia: float = foco.distance_to(m.global_position)
-        var deve_ativar: bool = distancia <= (DISTANCIA_ATIVACAO if not m.visible else DISTANCIA_DESATIVACAO)
+        # Moradores caídos (mortos) permanecem visíveis como "corpos" no cenário.
+        var deve_ativar: bool = true
+        if m.get("caido") == true:
+            deve_ativar = foco.distance_to(m.global_position) <= DISTANCIA_DESATIVACAO
+        else:
+            deve_ativar = foco.distance_to(m.global_position) <= (DISTANCIA_ATIVACAO if not m.visible else DISTANCIA_DESATIVACAO)
         if deve_ativar != m.visible:
             m.visible = deve_ativar
             if "physics_process" in m:
+                # Caídos ainda processam 0,5 s p/ terminar a animação de queda.
                 m.set_physics_process(deve_ativar)
+
+## Contágio de pânico: um tiro foi dado perto de `origem`; todos os moradores
+## num raio de 45 m se assustam e saem correndo (menos a vítima direta).
+func alarme_tiro(origem: Vector3, vitima: Node3D) -> void:
+    for m in moradores:
+        if m == vitima or not m.visible:
+            continue
+        if origem.distance_to(m.global_position) < 45.0 and m.has_method("susto_pertissimo"):
+            m.susto_pertissimo()
+
+## Retorna o morador mais próximo do raio do raycast, ou null.
+func morador_no_segmento(origem: Vector3, direcao: Vector3, alcance: float) -> Node3D:
+    var melhor: Node3D = null
+    var melhor_t: float = alcance
+    for m in moradores:
+        if not m.visible or m.get("caido") == true:
+            continue
+        # Cápsula aproximada: centro na altura do peito, raio 0.35, meia-altura 0.9.
+        var c: Vector3 = m.global_position + Vector3(0, 1.0, 0)
+        var oc: Vector3 = c - origem
+        var t: float = oc.dot(direcao)
+        if t < 0.0 or t > melhor_t:
+            continue
+        var d_perp: float = (oc - direcao * t).length()
+        var r: float = 0.42
+        if d_perp <= r:
+            # Impacto frontal: testa também cabeça/pernas ao longo do segmento.
+            melhor = m
+            melhor_t = t
+    return melhor
+
+## Alvo corpo a corpo: morador mais próximo dentro de `alcance` à frente de `de`.
+func morador_proximo(de: Vector3, frente: Vector3, alcance: float) -> Node3D:
+    var melhor: Node3D = null
+    var melhor_dist: float = alcance
+    for m in moradores:
+        if not m.visible or m.get("caido") == true:
+            continue
+        var v: Vector3 = (m.global_position + Vector3(0, 1.0, 0)) - de
+        var dist: float = v.length()
+        if dist <= melhor_dist and v.normalized().dot(frente) > 0.4:
+            melhor = m
+            melhor_dist = dist
+    return melhor

@@ -36,7 +36,9 @@
    "velocidade": 1.17,
    "pausa_min": 2.9,
    "pausa_max": 14.1,
-   "fase": 0.027
+   "fase": 0.027,
+   "adereco": "cafe",
+   "segurando_mao": "d"
   },
   {
    "id": "c001",
@@ -72,7 +74,9 @@
    "velocidade": 1.35,
    "pausa_min": 2.6,
    "pausa_max": 19.5,
-   "fase": 0.337
+   "fase": 0.337,
+   "adereco": "cafe",
+   "segurando_mao": "d"
   },
   {
    "id": "c002",
@@ -108,7 +112,9 @@
    "velocidade": 1.2,
    "pausa_min": 3.2,
    "pausa_max": 15.5,
-   "fase": 0.885
+   "fase": 0.885,
+   "adereco": "cafe",
+   "segurando_mao": "e"
   },
   {
    "id": "c003",
@@ -144,7 +150,9 @@
    "velocidade": 1.38,
    "pausa_min": 3.8,
    "pausa_max": 18.0,
-   "fase": 0.163
+   "fase": 0.163,
+   "adereco": "cafe",
+   "segurando_mao": "d"
   },
   {
    "id": "c004",
@@ -180,7 +188,9 @@
    "velocidade": 1.25,
    "pausa_min": 3.5,
    "pausa_max": 19.9,
-   "fase": 0.64
+   "fase": 0.64,
+   "adereco": "cafe",
+   "segurando_mao": "e"
   },
   {
    "id": "c005",
@@ -216,7 +226,9 @@
    "velocidade": 1.19,
    "pausa_min": 5.7,
    "pausa_max": 14.8,
-   "fase": 0.718
+   "fase": 0.718,
+   "adereco": "cafe",
+   "segurando_mao": "e"
   },
   {
    "id": "c006",
@@ -252,7 +264,9 @@
    "velocidade": 1.6,
    "pausa_min": 3.7,
    "pausa_max": 15.0,
-   "fase": 0.362
+   "fase": 0.362,
+   "adereco": "cafe",
+   "segurando_mao": "d"
   },
   {
    "id": "c007",
@@ -288,7 +302,10 @@
    "velocidade": 1.51,
    "pausa_min": 3.5,
    "pausa_max": 15.2,
-   "fase": 0.468
+   "fase": 0.468,
+   "adereco": "cigarro",
+   "fumar_min": 67.2,
+   "fumar_max": 212.9
   },
   {
    "id": "c008",
@@ -324,7 +341,10 @@
    "velocidade": 1.41,
    "pausa_min": 3.8,
    "pausa_max": 19.4,
-   "fase": 0.876
+   "fase": 0.876,
+   "adereco": "cigarro",
+   "fumar_min": 33.1,
+   "fumar_max": 239.6
   },
   {
    "id": "c009",
@@ -360,7 +380,10 @@
    "velocidade": 1.47,
    "pausa_min": 5.1,
    "pausa_max": 14.4,
-   "fase": 0.001
+   "fase": 0.001,
+   "adereco": "cigarro",
+   "fumar_min": 52.6,
+   "fumar_max": 262.7
   },
   {
    "id": "c010",
@@ -396,7 +419,10 @@
    "velocidade": 1.2,
    "pausa_min": 3.9,
    "pausa_max": 8.8,
-   "fase": 0.761
+   "fase": 0.761,
+   "adereco": "cigarro",
+   "fumar_min": 68.0,
+   "fumar_max": 256.2
   },
   {
    "id": "c011",
@@ -432,7 +458,10 @@
    "velocidade": 1.58,
    "pausa_min": 3.6,
    "pausa_max": 16.1,
-   "fase": 0.373
+   "fase": 0.373,
+   "adereco": "cigarro",
+   "fumar_min": 79.7,
+   "fumar_max": 212.1
   },
   {
    "id": "c012",
@@ -468,7 +497,8 @@
    "velocidade": 1.19,
    "pausa_min": 4.5,
    "pausa_max": 10.7,
-   "fase": 0.905
+   "fase": 0.905,
+   "adereco": null
   },
   {
    "id": "c013",
@@ -504,7 +534,8 @@
    "velocidade": 1.3,
    "pausa_min": 3.9,
    "pausa_max": 12.9,
-   "fase": 0.094
+   "fase": 0.094,
+   "adereco": null
   },
   {
    "id": "c014",
@@ -540,7 +571,8 @@
    "velocidade": 1.63,
    "pausa_min": 2.4,
    "pausa_max": 10.3,
-   "fase": 0.536
+   "fase": 0.536,
+   "adereco": null
   },
   {
    "id": "c015",
@@ -576,7 +608,8 @@
    "velocidade": 1.73,
    "pausa_min": 5.7,
    "pausa_max": 18.2,
-   "fase": 0.166
+   "fase": 0.166,
+   "adereco": null
   },
   {
    "id": "c016",
@@ -612,7 +645,8 @@
    "velocidade": 1.32,
    "pausa_min": 4.8,
    "pausa_max": 16.8,
-   "fase": 0.783
+   "fase": 0.783,
+   "adereco": null
   },
   {
    "id": "c017",
@@ -648,7 +682,8 @@
    "velocidade": 1.5,
    "pausa_min": 4.0,
    "pausa_max": 18.2,
-   "fase": 0.157
+   "fase": 0.157,
+   "adereco": null
   },
   {
    "id": "c018",
@@ -684,7 +719,8 @@
    "velocidade": 1.5,
    "pausa_min": 2.2,
    "pausa_max": 9.0,
-   "fase": 0.657
+   "fase": 0.657,
+   "adereco": null
   },
   {
    "id": "c019",
@@ -720,7 +756,8 @@
    "velocidade": 1.55,
    "pausa_min": 3.2,
    "pausa_max": 11.8,
-   "fase": 0.752
+   "fase": 0.752,
+   "adereco": null
   },
   {
    "id": "c020",
@@ -756,7 +793,9 @@
    "velocidade": 1.71,
    "pausa_min": 5.5,
    "pausa_max": 18.6,
-   "fase": 0.37
+   "fase": 0.37,
+   "adereco": "cafe",
+   "segurando_mao": "d"
   },
   {
    "id": "c021",
@@ -792,7 +831,9 @@
    "velocidade": 1.22,
    "pausa_min": 2.4,
    "pausa_max": 14.6,
-   "fase": 0.272
+   "fase": 0.272,
+   "adereco": "cafe",
+   "segurando_mao": "e"
   },
   {
    "id": "c022",
@@ -828,7 +869,9 @@
    "velocidade": 1.21,
    "pausa_min": 3.7,
    "pausa_max": 11.3,
-   "fase": 0.004
+   "fase": 0.004,
+   "adereco": "cafe",
+   "segurando_mao": "d"
   },
   {
    "id": "c023",
@@ -864,7 +907,9 @@
    "velocidade": 1.48,
    "pausa_min": 5.3,
    "pausa_max": 15.0,
-   "fase": 0.148
+   "fase": 0.148,
+   "adereco": "cafe",
+   "segurando_mao": "d"
   },
   {
    "id": "c024",
@@ -900,7 +945,9 @@
    "velocidade": 1.55,
    "pausa_min": 3.4,
    "pausa_max": 14.7,
-   "fase": 0.875
+   "fase": 0.875,
+   "adereco": "cafe",
+   "segurando_mao": "e"
   },
   {
    "id": "c025",
@@ -936,7 +983,9 @@
    "velocidade": 1.59,
    "pausa_min": 3.3,
    "pausa_max": 19.2,
-   "fase": 0.802
+   "fase": 0.802,
+   "adereco": "cafe",
+   "segurando_mao": "e"
   },
   {
    "id": "c026",
@@ -972,7 +1021,9 @@
    "velocidade": 1.28,
    "pausa_min": 5.3,
    "pausa_max": 13.5,
-   "fase": 0.305
+   "fase": 0.305,
+   "adereco": "cafe",
+   "segurando_mao": "e"
   },
   {
    "id": "c027",
@@ -1008,7 +1059,10 @@
    "velocidade": 1.36,
    "pausa_min": 4.0,
    "pausa_max": 16.2,
-   "fase": 0.844
+   "fase": 0.844,
+   "adereco": "cigarro",
+   "fumar_min": 32.1,
+   "fumar_max": 153.1
   },
   {
    "id": "c028",
@@ -1044,7 +1098,10 @@
    "velocidade": 1.36,
    "pausa_min": 5.1,
    "pausa_max": 13.2,
-   "fase": 0.984
+   "fase": 0.984,
+   "adereco": "cigarro",
+   "fumar_min": 83.3,
+   "fumar_max": 254.4
   },
   {
    "id": "c029",
@@ -1080,7 +1137,10 @@
    "velocidade": 1.37,
    "pausa_min": 2.3,
    "pausa_max": 16.0,
-   "fase": 0.33
+   "fase": 0.33,
+   "adereco": "cigarro",
+   "fumar_min": 49.2,
+   "fumar_max": 184.8
   },
   {
    "id": "c030",
@@ -1116,7 +1176,10 @@
    "velocidade": 1.48,
    "pausa_min": 2.8,
    "pausa_max": 16.0,
-   "fase": 0.379
+   "fase": 0.379,
+   "adereco": "cigarro",
+   "fumar_min": 81.9,
+   "fumar_max": 135.4
   },
   {
    "id": "c031",
@@ -1152,7 +1215,10 @@
    "velocidade": 1.62,
    "pausa_min": 4.4,
    "pausa_max": 11.9,
-   "fase": 0.442
+   "fase": 0.442,
+   "adereco": "cigarro",
+   "fumar_min": 79.6,
+   "fumar_max": 226.2
   },
   {
    "id": "c032",
@@ -1188,7 +1254,8 @@
    "velocidade": 1.21,
    "pausa_min": 5.8,
    "pausa_max": 10.8,
-   "fase": 0.31
+   "fase": 0.31,
+   "adereco": null
   },
   {
    "id": "c033",
@@ -1224,7 +1291,8 @@
    "velocidade": 1.58,
    "pausa_min": 3.5,
    "pausa_max": 12.8,
-   "fase": 0.148
+   "fase": 0.148,
+   "adereco": null
   },
   {
    "id": "c034",
@@ -1260,7 +1328,8 @@
    "velocidade": 1.18,
    "pausa_min": 3.0,
    "pausa_max": 18.2,
-   "fase": 0.456
+   "fase": 0.456,
+   "adereco": null
   },
   {
    "id": "c035",
@@ -1296,7 +1365,8 @@
    "velocidade": 1.6,
    "pausa_min": 3.9,
    "pausa_max": 11.1,
-   "fase": 0.247
+   "fase": 0.247,
+   "adereco": null
   },
   {
    "id": "c036",
@@ -1332,7 +1402,8 @@
    "velocidade": 1.29,
    "pausa_min": 3.3,
    "pausa_max": 18.7,
-   "fase": 0.081
+   "fase": 0.081,
+   "adereco": null
   },
   {
    "id": "c037",
@@ -1368,7 +1439,8 @@
    "velocidade": 1.4,
    "pausa_min": 2.8,
    "pausa_max": 13.0,
-   "fase": 0.905
+   "fase": 0.905,
+   "adereco": null
   },
   {
    "id": "c038",
@@ -1404,7 +1476,8 @@
    "velocidade": 1.6,
    "pausa_min": 5.4,
    "pausa_max": 19.4,
-   "fase": 0.419
+   "fase": 0.419,
+   "adereco": null
   },
   {
    "id": "c039",
@@ -1440,7 +1513,8 @@
    "velocidade": 1.38,
    "pausa_min": 4.7,
    "pausa_max": 17.6,
-   "fase": 0.724
+   "fase": 0.724,
+   "adereco": null
   },
   {
    "id": "c040",
@@ -1476,7 +1550,9 @@
    "velocidade": 1.23,
    "pausa_min": 3.8,
    "pausa_max": 8.6,
-   "fase": 0.379
+   "fase": 0.379,
+   "adereco": "cafe",
+   "segurando_mao": "e"
   },
   {
    "id": "c041",
@@ -1512,7 +1588,9 @@
    "velocidade": 1.6,
    "pausa_min": 2.2,
    "pausa_max": 19.4,
-   "fase": 0.224
+   "fase": 0.224,
+   "adereco": "cafe",
+   "segurando_mao": "e"
   },
   {
    "id": "c042",
@@ -1548,7 +1626,9 @@
    "velocidade": 1.29,
    "pausa_min": 3.9,
    "pausa_max": 9.4,
-   "fase": 0.948
+   "fase": 0.948,
+   "adereco": "cafe",
+   "segurando_mao": "e"
   },
   {
    "id": "c043",
@@ -1584,7 +1664,9 @@
    "velocidade": 1.71,
    "pausa_min": 4.3,
    "pausa_max": 18.9,
-   "fase": 0.375
+   "fase": 0.375,
+   "adereco": "cafe",
+   "segurando_mao": "d"
   },
   {
    "id": "c044",
@@ -1620,7 +1702,9 @@
    "velocidade": 1.63,
    "pausa_min": 4.3,
    "pausa_max": 8.5,
-   "fase": 0.533
+   "fase": 0.533,
+   "adereco": "cafe",
+   "segurando_mao": "d"
   },
   {
    "id": "c045",
@@ -1656,7 +1740,9 @@
    "velocidade": 1.53,
    "pausa_min": 5.3,
    "pausa_max": 16.5,
-   "fase": 0.435
+   "fase": 0.435,
+   "adereco": "cafe",
+   "segurando_mao": "e"
   },
   {
    "id": "c046",
@@ -1692,7 +1778,9 @@
    "velocidade": 1.34,
    "pausa_min": 3.0,
    "pausa_max": 19.2,
-   "fase": 0.279
+   "fase": 0.279,
+   "adereco": "cafe",
+   "segurando_mao": "e"
   },
   {
    "id": "c047",
@@ -1728,7 +1816,10 @@
    "velocidade": 1.26,
    "pausa_min": 2.8,
    "pausa_max": 17.6,
-   "fase": 0.34
+   "fase": 0.34,
+   "adereco": "cigarro",
+   "fumar_min": 69.6,
+   "fumar_max": 298.8
   },
   {
    "id": "c048",
@@ -1764,7 +1855,10 @@
    "velocidade": 1.44,
    "pausa_min": 5.0,
    "pausa_max": 16.3,
-   "fase": 0.646
+   "fase": 0.646,
+   "adereco": "cigarro",
+   "fumar_min": 61.0,
+   "fumar_max": 176.2
   },
   {
    "id": "c049",
@@ -1800,7 +1894,10 @@
    "velocidade": 1.48,
    "pausa_min": 3.4,
    "pausa_max": 20.0,
-   "fase": 0.55
+   "fase": 0.55,
+   "adereco": "cigarro",
+   "fumar_min": 41.0,
+   "fumar_max": 141.6
   },
   {
    "id": "c050",
@@ -1836,7 +1933,10 @@
    "velocidade": 1.26,
    "pausa_min": 5.0,
    "pausa_max": 11.3,
-   "fase": 0.59
+   "fase": 0.59,
+   "adereco": "cigarro",
+   "fumar_min": 80.4,
+   "fumar_max": 126.9
   },
   {
    "id": "c051",
@@ -1872,7 +1972,10 @@
    "velocidade": 1.31,
    "pausa_min": 5.9,
    "pausa_max": 14.6,
-   "fase": 0.697
+   "fase": 0.697,
+   "adereco": "cigarro",
+   "fumar_min": 34.7,
+   "fumar_max": 254.8
   },
   {
    "id": "c052",
@@ -1908,7 +2011,8 @@
    "velocidade": 1.26,
    "pausa_min": 2.2,
    "pausa_max": 19.3,
-   "fase": 0.478
+   "fase": 0.478,
+   "adereco": null
   },
   {
    "id": "c053",
@@ -1944,7 +2048,8 @@
    "velocidade": 1.2,
    "pausa_min": 3.0,
    "pausa_max": 14.7,
-   "fase": 0.416
+   "fase": 0.416,
+   "adereco": null
   },
   {
    "id": "c054",
@@ -1980,7 +2085,8 @@
    "velocidade": 1.49,
    "pausa_min": 2.2,
    "pausa_max": 19.5,
-   "fase": 0.099
+   "fase": 0.099,
+   "adereco": null
   },
   {
    "id": "c055",
@@ -2016,7 +2122,8 @@
    "velocidade": 1.15,
    "pausa_min": 3.8,
    "pausa_max": 15.1,
-   "fase": 0.291
+   "fase": 0.291,
+   "adereco": null
   },
   {
    "id": "c056",
@@ -2052,7 +2159,8 @@
    "velocidade": 1.41,
    "pausa_min": 4.2,
    "pausa_max": 15.8,
-   "fase": 0.908
+   "fase": 0.908,
+   "adereco": null
   },
   {
    "id": "c057",
@@ -2088,7 +2196,8 @@
    "velocidade": 1.57,
    "pausa_min": 5.8,
    "pausa_max": 14.0,
-   "fase": 0.494
+   "fase": 0.494,
+   "adereco": null
   },
   {
    "id": "c058",
@@ -2124,7 +2233,8 @@
    "velocidade": 1.75,
    "pausa_min": 4.7,
    "pausa_max": 11.2,
-   "fase": 0.04
+   "fase": 0.04,
+   "adereco": null
   },
   {
    "id": "c059",
@@ -2160,7 +2270,8 @@
    "velocidade": 1.4,
    "pausa_min": 3.3,
    "pausa_max": 9.3,
-   "fase": 0.161
+   "fase": 0.161,
+   "adereco": null
   },
   {
    "id": "c060",
@@ -2196,7 +2307,9 @@
    "velocidade": 1.34,
    "pausa_min": 5.9,
    "pausa_max": 12.9,
-   "fase": 0.515
+   "fase": 0.515,
+   "adereco": "cafe",
+   "segurando_mao": "e"
   },
   {
    "id": "c061",
@@ -2232,7 +2345,9 @@
    "velocidade": 1.53,
    "pausa_min": 5.0,
    "pausa_max": 10.4,
-   "fase": 0.549
+   "fase": 0.549,
+   "adereco": "cafe",
+   "segurando_mao": "d"
   },
   {
    "id": "c062",
@@ -2268,7 +2383,9 @@
    "velocidade": 1.48,
    "pausa_min": 2.4,
    "pausa_max": 19.9,
-   "fase": 0.913
+   "fase": 0.913,
+   "adereco": "cafe",
+   "segurando_mao": "e"
   },
   {
    "id": "c063",
@@ -2304,7 +2421,9 @@
    "velocidade": 1.74,
    "pausa_min": 3.0,
    "pausa_max": 14.6,
-   "fase": 0.384
+   "fase": 0.384,
+   "adereco": "cafe",
+   "segurando_mao": "d"
   },
   {
    "id": "c064",
@@ -2340,7 +2459,9 @@
    "velocidade": 1.64,
    "pausa_min": 3.1,
    "pausa_max": 11.6,
-   "fase": 0.587
+   "fase": 0.587,
+   "adereco": "cafe",
+   "segurando_mao": "d"
   },
   {
    "id": "c065",
@@ -2376,7 +2497,9 @@
    "velocidade": 1.42,
    "pausa_min": 3.3,
    "pausa_max": 10.3,
-   "fase": 0.697
+   "fase": 0.697,
+   "adereco": "cafe",
+   "segurando_mao": "d"
   },
   {
    "id": "c066",
@@ -2412,7 +2535,9 @@
    "velocidade": 1.45,
    "pausa_min": 2.1,
    "pausa_max": 14.0,
-   "fase": 0.59
+   "fase": 0.59,
+   "adereco": "cafe",
+   "segurando_mao": "d"
   },
   {
    "id": "c067",
@@ -2448,7 +2573,10 @@
    "velocidade": 1.19,
    "pausa_min": 5.1,
    "pausa_max": 11.2,
-   "fase": 0.623
+   "fase": 0.623,
+   "adereco": "cigarro",
+   "fumar_min": 68.9,
+   "fumar_max": 259.8
   },
   {
    "id": "c068",
@@ -2484,7 +2612,10 @@
    "velocidade": 1.52,
    "pausa_min": 2.9,
    "pausa_max": 16.2,
-   "fase": 0.287
+   "fase": 0.287,
+   "adereco": "cigarro",
+   "fumar_min": 74.8,
+   "fumar_max": 263.4
   },
   {
    "id": "c069",
@@ -2520,7 +2651,10 @@
    "velocidade": 1.69,
    "pausa_min": 2.2,
    "pausa_max": 17.6,
-   "fase": 0.293
+   "fase": 0.293,
+   "adereco": "cigarro",
+   "fumar_min": 60.1,
+   "fumar_max": 253.9
   },
   {
    "id": "c070",
@@ -2556,7 +2690,10 @@
    "velocidade": 1.52,
    "pausa_min": 3.0,
    "pausa_max": 19.0,
-   "fase": 0.143
+   "fase": 0.143,
+   "adereco": "cigarro",
+   "fumar_min": 86.2,
+   "fumar_max": 215.3
   },
   {
    "id": "c071",
@@ -2592,7 +2729,10 @@
    "velocidade": 1.42,
    "pausa_min": 3.4,
    "pausa_max": 15.1,
-   "fase": 0.639
+   "fase": 0.639,
+   "adereco": "cigarro",
+   "fumar_min": 65.3,
+   "fumar_max": 166.7
   },
   {
    "id": "c072",
@@ -2628,7 +2768,8 @@
    "velocidade": 1.49,
    "pausa_min": 4.3,
    "pausa_max": 19.9,
-   "fase": 0.295
+   "fase": 0.295,
+   "adereco": null
   },
   {
    "id": "c073",
@@ -2664,7 +2805,8 @@
    "velocidade": 1.51,
    "pausa_min": 3.4,
    "pausa_max": 15.6,
-   "fase": 0.621
+   "fase": 0.621,
+   "adereco": null
   },
   {
    "id": "c074",
@@ -2700,7 +2842,8 @@
    "velocidade": 1.17,
    "pausa_min": 3.5,
    "pausa_max": 9.6,
-   "fase": 0.91
+   "fase": 0.91,
+   "adereco": null
   },
   {
    "id": "c075",
@@ -2736,7 +2879,8 @@
    "velocidade": 1.73,
    "pausa_min": 3.2,
    "pausa_max": 18.4,
-   "fase": 0.804
+   "fase": 0.804,
+   "adereco": null
   },
   {
    "id": "c076",
@@ -2772,7 +2916,8 @@
    "velocidade": 1.16,
    "pausa_min": 4.1,
    "pausa_max": 13.5,
-   "fase": 0.673
+   "fase": 0.673,
+   "adereco": null
   },
   {
    "id": "c077",
@@ -2808,7 +2953,8 @@
    "velocidade": 1.7,
    "pausa_min": 2.9,
    "pausa_max": 8.8,
-   "fase": 0.824
+   "fase": 0.824,
+   "adereco": null
   },
   {
    "id": "c078",
@@ -2844,7 +2990,8 @@
    "velocidade": 1.29,
    "pausa_min": 4.2,
    "pausa_max": 12.7,
-   "fase": 0.371
+   "fase": 0.371,
+   "adereco": null
   },
   {
    "id": "c079",
@@ -2880,7 +3027,8 @@
    "velocidade": 1.52,
    "pausa_min": 5.8,
    "pausa_max": 11.4,
-   "fase": 0.69
+   "fase": 0.69,
+   "adereco": null
   },
   {
    "id": "c080",
@@ -2916,7 +3064,9 @@
    "velocidade": 1.26,
    "pausa_min": 2.5,
    "pausa_max": 18.2,
-   "fase": 0.455
+   "fase": 0.455,
+   "adereco": "cafe",
+   "segurando_mao": "d"
   },
   {
    "id": "c081",
@@ -2952,7 +3102,9 @@
    "velocidade": 1.19,
    "pausa_min": 5.1,
    "pausa_max": 10.5,
-   "fase": 0.216
+   "fase": 0.216,
+   "adereco": "cafe",
+   "segurando_mao": "d"
   },
   {
    "id": "c082",
@@ -2988,7 +3140,9 @@
    "velocidade": 1.63,
    "pausa_min": 2.4,
    "pausa_max": 18.4,
-   "fase": 0.132
+   "fase": 0.132,
+   "adereco": "cafe",
+   "segurando_mao": "d"
   },
   {
    "id": "c083",
@@ -3024,7 +3178,9 @@
    "velocidade": 1.47,
    "pausa_min": 5.0,
    "pausa_max": 13.7,
-   "fase": 0.778
+   "fase": 0.778,
+   "adereco": "cafe",
+   "segurando_mao": "e"
   },
   {
    "id": "c084",
@@ -3060,7 +3216,9 @@
    "velocidade": 1.19,
    "pausa_min": 3.9,
    "pausa_max": 12.8,
-   "fase": 0.686
+   "fase": 0.686,
+   "adereco": "cafe",
+   "segurando_mao": "d"
   },
   {
    "id": "c085",
@@ -3096,7 +3254,9 @@
    "velocidade": 1.38,
    "pausa_min": 4.4,
    "pausa_max": 11.5,
-   "fase": 0.506
+   "fase": 0.506,
+   "adereco": "cafe",
+   "segurando_mao": "d"
   },
   {
    "id": "c086",
@@ -3132,7 +3292,9 @@
    "velocidade": 1.35,
    "pausa_min": 3.8,
    "pausa_max": 13.0,
-   "fase": 0.095
+   "fase": 0.095,
+   "adereco": "cafe",
+   "segurando_mao": "e"
   },
   {
    "id": "c087",
@@ -3168,7 +3330,10 @@
    "velocidade": 1.21,
    "pausa_min": 2.4,
    "pausa_max": 16.9,
-   "fase": 0.812
+   "fase": 0.812,
+   "adereco": "cigarro",
+   "fumar_min": 42.1,
+   "fumar_max": 164.2
   },
   {
    "id": "c088",
@@ -3204,7 +3369,10 @@
    "velocidade": 1.67,
    "pausa_min": 4.9,
    "pausa_max": 19.6,
-   "fase": 0.6
+   "fase": 0.6,
+   "adereco": "cigarro",
+   "fumar_min": 74.5,
+   "fumar_max": 277.3
   },
   {
    "id": "c089",
@@ -3240,7 +3408,10 @@
    "velocidade": 1.22,
    "pausa_min": 3.1,
    "pausa_max": 10.7,
-   "fase": 0.429
+   "fase": 0.429,
+   "adereco": "cigarro",
+   "fumar_min": 36.2,
+   "fumar_max": 123.0
   },
   {
    "id": "c090",
@@ -3276,7 +3447,10 @@
    "velocidade": 1.57,
    "pausa_min": 3.2,
    "pausa_max": 12.1,
-   "fase": 0.006
+   "fase": 0.006,
+   "adereco": "cigarro",
+   "fumar_min": 60.3,
+   "fumar_max": 133.2
   },
   {
    "id": "c091",
@@ -3312,7 +3486,10 @@
    "velocidade": 1.4,
    "pausa_min": 3.4,
    "pausa_max": 12.4,
-   "fase": 0.722
+   "fase": 0.722,
+   "adereco": "cigarro",
+   "fumar_min": 37.7,
+   "fumar_max": 153.7
   },
   {
    "id": "c092",
@@ -3348,7 +3525,8 @@
    "velocidade": 1.55,
    "pausa_min": 3.9,
    "pausa_max": 13.3,
-   "fase": 0.273
+   "fase": 0.273,
+   "adereco": null
   },
   {
    "id": "c093",
@@ -3384,7 +3562,8 @@
    "velocidade": 1.74,
    "pausa_min": 2.2,
    "pausa_max": 10.5,
-   "fase": 0.945
+   "fase": 0.945,
+   "adereco": null
   },
   {
    "id": "c094",
@@ -3420,7 +3599,8 @@
    "velocidade": 1.47,
    "pausa_min": 2.9,
    "pausa_max": 14.7,
-   "fase": 0.668
+   "fase": 0.668,
+   "adereco": null
   },
   {
    "id": "c095",
@@ -3456,7 +3636,8 @@
    "velocidade": 1.49,
    "pausa_min": 4.8,
    "pausa_max": 13.0,
-   "fase": 0.115
+   "fase": 0.115,
+   "adereco": null
   },
   {
    "id": "c096",
@@ -3492,7 +3673,8 @@
    "velocidade": 1.3,
    "pausa_min": 4.4,
    "pausa_max": 14.3,
-   "fase": 0.396
+   "fase": 0.396,
+   "adereco": null
   },
   {
    "id": "c097",
@@ -3528,7 +3710,8 @@
    "velocidade": 1.29,
    "pausa_min": 2.6,
    "pausa_max": 10.4,
-   "fase": 0.602
+   "fase": 0.602,
+   "adereco": null
   },
   {
    "id": "c098",
@@ -3564,7 +3747,8 @@
    "velocidade": 1.56,
    "pausa_min": 5.5,
    "pausa_max": 15.7,
-   "fase": 0.987
+   "fase": 0.987,
+   "adereco": null
   },
   {
    "id": "c099",
@@ -3600,7 +3784,8 @@
    "velocidade": 1.5,
    "pausa_min": 3.4,
    "pausa_max": 8.9,
-   "fase": 0.462
+   "fase": 0.462,
+   "adereco": null
   },
   {
    "id": "c100",
@@ -3636,7 +3821,9 @@
    "velocidade": 1.42,
    "pausa_min": 5.2,
    "pausa_max": 15.8,
-   "fase": 0.322
+   "fase": 0.322,
+   "adereco": "cafe",
+   "segurando_mao": "d"
   },
   {
    "id": "c101",
@@ -3672,7 +3859,9 @@
    "velocidade": 1.17,
    "pausa_min": 4.8,
    "pausa_max": 19.9,
-   "fase": 0.524
+   "fase": 0.524,
+   "adereco": "cafe",
+   "segurando_mao": "e"
   },
   {
    "id": "c102",
@@ -3708,7 +3897,9 @@
    "velocidade": 1.21,
    "pausa_min": 4.7,
    "pausa_max": 11.4,
-   "fase": 0.724
+   "fase": 0.724,
+   "adereco": "cafe",
+   "segurando_mao": "e"
   },
   {
    "id": "c103",
@@ -3744,7 +3935,9 @@
    "velocidade": 1.23,
    "pausa_min": 4.8,
    "pausa_max": 9.0,
-   "fase": 0.559
+   "fase": 0.559,
+   "adereco": "cafe",
+   "segurando_mao": "d"
   },
   {
    "id": "c104",
@@ -3780,7 +3973,9 @@
    "velocidade": 1.37,
    "pausa_min": 2.7,
    "pausa_max": 10.6,
-   "fase": 0.948
+   "fase": 0.948,
+   "adereco": "cafe",
+   "segurando_mao": "d"
   },
   {
    "id": "c105",
@@ -3816,7 +4011,9 @@
    "velocidade": 1.51,
    "pausa_min": 2.6,
    "pausa_max": 10.2,
-   "fase": 0.693
+   "fase": 0.693,
+   "adereco": "cafe",
+   "segurando_mao": "d"
   },
   {
    "id": "c106",
@@ -3852,7 +4049,9 @@
    "velocidade": 1.6,
    "pausa_min": 5.1,
    "pausa_max": 10.8,
-   "fase": 0.239
+   "fase": 0.239,
+   "adereco": "cafe",
+   "segurando_mao": "e"
   },
   {
    "id": "c107",
@@ -3888,7 +4087,10 @@
    "velocidade": 1.45,
    "pausa_min": 3.7,
    "pausa_max": 9.9,
-   "fase": 0.2
+   "fase": 0.2,
+   "adereco": "cigarro",
+   "fumar_min": 69.4,
+   "fumar_max": 183.3
   },
   {
    "id": "c108",
@@ -3924,7 +4126,10 @@
    "velocidade": 1.32,
    "pausa_min": 5.1,
    "pausa_max": 11.3,
-   "fase": 0.905
+   "fase": 0.905,
+   "adereco": "cigarro",
+   "fumar_min": 44.3,
+   "fumar_max": 274.9
   },
   {
    "id": "c109",
@@ -3960,7 +4165,10 @@
    "velocidade": 1.39,
    "pausa_min": 3.5,
    "pausa_max": 12.6,
-   "fase": 0.082
+   "fase": 0.082,
+   "adereco": "cigarro",
+   "fumar_min": 41.1,
+   "fumar_max": 171.3
   },
   {
    "id": "c110",
@@ -3996,7 +4204,10 @@
    "velocidade": 1.7,
    "pausa_min": 3.9,
    "pausa_max": 18.0,
-   "fase": 0.759
+   "fase": 0.759,
+   "adereco": "cigarro",
+   "fumar_min": 85.5,
+   "fumar_max": 297.6
   },
   {
    "id": "c111",
@@ -4032,7 +4243,10 @@
    "velocidade": 1.22,
    "pausa_min": 3.2,
    "pausa_max": 11.6,
-   "fase": 0.048
+   "fase": 0.048,
+   "adereco": "cigarro",
+   "fumar_min": 38.7,
+   "fumar_max": 251.9
   },
   {
    "id": "c112",
@@ -4068,7 +4282,8 @@
    "velocidade": 1.58,
    "pausa_min": 3.2,
    "pausa_max": 8.0,
-   "fase": 0.353
+   "fase": 0.353,
+   "adereco": null
   },
   {
    "id": "c113",
@@ -4104,7 +4319,8 @@
    "velocidade": 1.38,
    "pausa_min": 3.9,
    "pausa_max": 15.6,
-   "fase": 0.981
+   "fase": 0.981,
+   "adereco": null
   },
   {
    "id": "c114",
@@ -4140,7 +4356,8 @@
    "velocidade": 1.48,
    "pausa_min": 5.3,
    "pausa_max": 10.1,
-   "fase": 0.779
+   "fase": 0.779,
+   "adereco": null
   },
   {
    "id": "c115",
@@ -4176,7 +4393,8 @@
    "velocidade": 1.62,
    "pausa_min": 5.5,
    "pausa_max": 11.8,
-   "fase": 0.31
+   "fase": 0.31,
+   "adereco": null
   },
   {
    "id": "c116",
@@ -4212,7 +4430,8 @@
    "velocidade": 1.67,
    "pausa_min": 3.3,
    "pausa_max": 9.5,
-   "fase": 0.368
+   "fase": 0.368,
+   "adereco": null
   },
   {
    "id": "c117",
@@ -4248,7 +4467,8 @@
    "velocidade": 1.63,
    "pausa_min": 4.9,
    "pausa_max": 8.9,
-   "fase": 0.602
+   "fase": 0.602,
+   "adereco": null
   },
   {
    "id": "c118",
@@ -4284,7 +4504,8 @@
    "velocidade": 1.25,
    "pausa_min": 3.8,
    "pausa_max": 13.4,
-   "fase": 0.727
+   "fase": 0.727,
+   "adereco": null
   },
   {
    "id": "c119",
@@ -4320,7 +4541,8 @@
    "velocidade": 1.72,
    "pausa_min": 2.6,
    "pausa_max": 15.3,
-   "fase": 0.781
+   "fase": 0.781,
+   "adereco": null
   }
  ]
 }

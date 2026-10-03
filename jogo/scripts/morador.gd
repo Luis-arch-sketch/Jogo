@@ -11,6 +11,8 @@ const MARGEM: float = 247.0          # limites do mapa (500 x 500 m)
 const PASSO_POR_ALTURA: float = 0.71 # passada ≈ 0.71 × altura (dado real de marcha)
 const GRAVIDADE: float = 18.0
 
+const IA := preload("res://scripts/ia_morador.gd")
+
 var perfil: Dictionary = {}
 var velocidade_alvo: float = 1.35
 var fase_passada: float = 0.0
@@ -35,8 +37,39 @@ var quadril_d: Node3D; var joelho_d: Node3D; tornozelo_d: Node3D
 var clips: Dictionary = {}   # walk/idle carregados do bake da Amber
 var carregado: bool = false
 
+# ---- Adereços: café na mão e cigarro (fuma parado, depois sai andando) ----
+var adereco: String = ""            # "" | cafe | cigarro
+var mao_cafe: String = "d"          # mão que segura o copo de café
+var tempo_fumar: float = 0.0        # duração da pausa para fumar (s)
+var fumando: bool = false           # true durante a pausa do cigarro
+var braco_copo: Node3D = null       # antebraço com o copo (referência p/ pose)
+var _braco_len: float = 0.30        # comprimento do braço (definido em _montar_corpo)
+var _cabeca_r: float = 0.115        # raio da cabeça (definido em _montar_corpo)
+var copo: MeshInstance3D = null
+var cigarro_mesh: MeshInstance3D = null
+var brasa: PointLight3D = null      # brasinha laranja que acende ao tragar
+var fumaça: GPUParticles3D = null
+var ponta_cigarro: Node3D = null    # nó na altura dos lábios p/ posicionar o cigarro
+var ciclo_tragada: float = 0.0      # timer da tragada (~4 s por tragada)
+
+# ---- IA emocional (dor, medo, raiva, falas rápidas) ----
+var ia: RefCounted = null           # instância de scripts/ia_morador.gd
+var local_ferimento: String = "toraco"   # toraco | coxaE | coxaD | bracoE | bracoD
+var dor_pose: float = 0.0           # 0..1 peso da pose de segurar a ferida
+var fugindo: bool = false
+var velocidade_fuga: float = 3.2
+var caido: bool = false
+var angulo_caida: float = 0.0
+var tempo_congelado: float = 0.0
+var balao_texto: String = ""        # última fala escolhida pela IA
+var sangue: GPUParticles3D = null
+signal morador_atingido(morador: Node3D, dano: float, causador: Node3D)
+
 func configurar(dados: Dictionary, inicial: Vector3, json_animacao: Variant = null) -> void:
     perfil = dados
+    ia = IA.new(int(hash(String(dados.get("id", name)))))
+    if dados.has("nome") and String(dados["nome"]) != "":
+        ia.nome = String(dados["nome"])
     if json_animacao is Dictionary:
         _interpretar_clips(json_animacao)
     velocidade_alvo = float(dados.get("velocidade", 1.35))
@@ -46,9 +79,79 @@ func configurar(dados: Dictionary, inicial: Vector3, json_animacao: Variant = nu
 
 func _ready() -> void:
     _carregar_clips()
-    _montar_corpo()
     randomize()
+    # Fumantes começam já com um cigarro aceso na mão (pose de fumar).
+    if String(perfil.get("adereco", "")) == "cigarro" and randf() < 0.5:
+        fumando = true
+        estado = "pausado"
+        tempo_fumar = randf_range(float(perfil.get("fumar_min", 30.0)), float(perfil.get("fumar_max", 120.0)))
     proxima_pausa = randf_range(float(perfil.get("pausa_min", 4.0)), float(perfil.get("pausa_max", 15.0)))
+    # Corpo montado por último para que os adereços (café/cigarro) sejam presos
+    # aos braços e à cabeça já existentes.
+    _montar_corpo()
+    _criar_aderecos()
+
+# Cria os apetrechos conforme o perfil: copo de café ou cigarro com brasa/fumaça.
+func _criar_aderecos() -> void:
+    adereco = String(perfil.get("adereco", ""))
+    if adereco == "":
+        return
+    var h: float = float(perfil.get("altura", 1.70))
+    var escala: float = h / 1.70
+    mao_cafe = String(perfil.get("segurando_mao", "d"))
+    if adereco == "cafe":
+        # Copo de papel preso à mão (antebraço) escolhida.
+        braco_copo = cotovelo_d if mao_cafe == "d" else cotovelo_e
+        var copo_mat := _mat(Color(0.92, 0.9, 0.86), 0.6)
+        copo = _peca(braco_copo, Vector3(0, -_braco_len * 1.02, _braco_len * 0.45),
+            Vector3(0.075 * escala, 0.13 * escala, 0.075 * escala), copo_mat, "CopoCafe")
+        _peca(copo, Vector3(0, 0.075 * escala, 0),
+            Vector3(0.085 * escala, 0.02 * escala, 0.085 * escala), _mat(Color(0.35, 0.2, 0.1), 0.5), "Tampa")
+    elif adereco == "cigarro":
+        # Ponto na altura dos lábios; cigarro aparece só quando ele para pra fumar.
+        ponta_cigarro = _no(cabeca, Vector3(0.02 * escala, -_cabeca_r * 0.35, _cabeca_r * 0.95), "Boca")
+        cigarro_mesh = _peca(ponta_cigarro, Vector3(0, 0, 0.03 * escala),
+            Vector3(0.012 * escala, 0.012 * escala, 0.075 * escala), _mat(Color(0.95, 0.93, 0.85), 0.9), "Cigarro")
+        cigarro_mesh.visible = false
+        brasa = PointLight3D.new()
+        brasa.name = "Brasa"
+        brasa.light_color = Color(1.0, 0.35, 0.08)
+        brasa.light_energy = 0.0
+        brasa.omni_range = 0.35
+        brasa.position = Vector3(0, 0, 0.07 * escala)
+        ponta_cigarro.add_child(brasa)
+        fumaça = GPUParticles3D.new()
+        fumaça.name = "Fumaca"
+        var proc := ParticleProcessMaterial.new()
+        proc.direction = Vector3(0, 1, 0.15)
+        proc.spread = 12.0
+        proc.gravity = Vector3(0.05, 0.35, 0.0)
+        proc.initial_velocity_min = 0.05
+        proc.initial_velocity_max = 0.15
+        proc.scale_amount_min = 0.012
+        proc.scale_amount_max = 0.03
+        proc.emission_shape = ParticleProcessMaterial.EMISSION_SHAPE_SPHERE
+        proc.emission_sphere_radius = 0.01
+        var grad := Gradient.new()
+        grad.set_color(0, Color(0.85, 0.85, 0.88, 0.35))
+        grad.set_color(1, Color(0.9, 0.9, 0.92, 0.0))
+        proc.color_ramp = grad
+        fumaça.process_material = proc
+        fumaça.amount = 24
+        fumaça.lifetime = 2.2
+        fumaça.preprocess = 0.5
+        fumaça.visible = false
+        var quad := QuadMesh.new()
+        quad.size = Vector2(0.06, 0.06)
+        var smoke_mat := StandardMaterial3D.new()
+        smoke_mat.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
+        smoke_mat.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+        smoke_mat.vertex_color_use_as_albedo = true
+        smoke_mat.billboard_mode = BaseMaterial3D.BILLBOARD_PARTICLES
+        smoke_mat.blend_mode = BaseMaterial3D.BLEND_MODE_ADD
+        quad.material = smoke_mat
+        fumaça.draw_pass_1 = quad
+        ponta_cigarro.add_child(fumaça)
 
 func _carregar_clips() -> void:
     if carregado:
@@ -165,10 +268,12 @@ func _montar_corpo() -> void:
     var cintura: float = 0.55 * escala
     var ombro: float = 1.42 * escala
     var braco: float = 0.30 * escala
+    _braco_len = braco
     var perna_sup: float = 0.42 * escala
     var perna_inf: float = 0.42 * escala
     var pescoco: float = 0.10 * escala
     var cabeca_r: float = 0.115 * escala
+    _cabeca_r = cabeca_r
     var ombros_larg: float = 0.40 * escala * largura_fator
     var tronco_larg: float = 0.34 * escala * largura_fator / maxf(magreza, 0.6)
     var braço_comp: float = 0.58 * escala
@@ -230,18 +335,58 @@ func _physics_process(delta: float) -> void:
         return
     if not visible:
         return
+    # ---- IA emocional roda sempre (mesmo parada): decide falas e estado ----
+    if ia != null:
+        ia.pensar(delta)
+        var fala: String = ia.proxima_fala(delta)
+        if fala != "":
+            balao_texto = fala
+        else:
+            balao_texto = ""
+        # Contágio de pânico: medo alto faz essa pessoa fugir (dor forte fica
+        # no lugar segurando a ferida).
+        if not fugindo and not caido and ia.deve_fugir() and ia.dor < 0.75:
+            _comecar_fuga()
+    if caido:
+        # Termina a queda e congela o corpo no chão.
+        _animar_caida(delta)
+        tempo_congelado += delta
+        if tempo_congelado > 1.2:
+            set_physics_process(false)
+        return
     if estado == "pausado":
         tempo_pausa -= delta
+        if fumando:
+            # Ciclo de tragadas: brasa acende a cada ~4 s e fumaça sobe.
+            ciclo_tragada += delta
+            if ciclo_tragada > 4.0:
+                ciclo_tragada = 0.0
         if tempo_pausa <= 0.0:
-            estado = "andando"
-            destino = _novo_destino()
-            proxima_pausa = randf_range(float(perfil.get("pausa_min", 4.0)), float(perfil.get("pausa_max", 15.0)))
+            if fumando:
+                _terminar_cigarro()   # apaga, joga o cigarro fora e sai andando
+            # Quem ainda está com muita dor continua segurando a ferida;
+            # quando a dor passa, volta a vagar normalmente.
+            if ia != null and ia.dor > 0.25:
+                tempo_pausa = 4.0
+            else:
+                estado = "andando"
+                destino = _novo_destino()
+                proxima_pausa = randf_range(float(perfil.get("pausa_min", 4.0)), float(perfil.get("pausa_max", 15.0)))
     else:
         var plano := Vector3(position.x, 0.0, position.z)
+        # Quem está fugindo corre na direção OPOSTA ao agressor/última origem.
+        if fugindo and ia != null and ia.ultimo_atirador != null and is_instance_valid(ia.ultimo_atirador):
+            var ameaca: Vector3 = (ia.ultimo_atirador as Node3D).global_position
+            destino = Vector3(position.x + (position.x - ameaca.x), 0.0, position.z + (position.z - ameaca.z))
+            destino.x = clampf(destino.x, -MARGEM, MARGEM)
+            destino.z = clampf(destino.z, -MARGEM, MARGEM)
         var para_destino := Vector3(destino.x - plano.x, 0.0, destino.z - plano.z)
         para_destino.y = 0.0
+        var vel_atual: float = velocidade_fuga if fugindo else velocidade_alvo
         if para_destino.length() < 1.2:
-            if randf() < 0.5:
+            if fugindo:
+                _parar_de_fugir()
+            elif randf() < 0.5:
                 estado = "pausado"
                 tempo_pausa = randf_range(1.5, 5.0)
             else:
@@ -249,13 +394,19 @@ func _physics_process(delta: float) -> void:
         else:
             var desejado := para_destino.normalized()
             direcao_atual = direcao_atual.lerp(desejado, minf(delta * 3.5, 1.0)).normalized()
-            plano += direcao_atual * velocidade_alvo * delta
+            plano += direcao_atual * vel_atual * delta
             position = Vector3(plano.x, position.y, plano.z)
         # Pausa ocasional no meio do trajeto, como gente real.
+        # Fumantes que pausam aproveitam pra acender um cigarro e fumar parado
+        # por um bom tempo (fumar_min..fumar_max), depois saem andando com o
+        # cigarro já jogado fora.
         proxima_pausa -= delta
-        if proxima_pausa <= 0.0 and estado == "andando":
-            estado = "pausado"
-            tempo_pausa = randf_range(float(perfil.get("pausa_min", 3.0)), float(perfil.get("pausa_max", 10.0)))
+        if proxima_pausa <= 0.0 and estado == "andando" and not fugindo:
+            if adereco == "cigarro" and not fumando:
+                _acender_cigarro()
+            else:
+                estado = "pausado"
+                tempo_pausa = randf_range(float(perfil.get("pausa_min", 3.0)), float(perfil.get("pausa_max", 10.0)))
             proxima_pausa = randf_range(15.0, 60.0)
 
     # Gravidade simples (mantém os pés no chão).
@@ -271,10 +422,198 @@ func _physics_process(delta: float) -> void:
     rotation.y = lerp_angle(rotation.y, angulo_alvo, minf(delta * 6.0, 1.0))
 
     _animar(delta)
+    _process_aderecos(delta)
+
+# ============ DANO / DOR (chamado pelo sistema de armas) ============
+## O morador é atingido: a IA emocional decide na hora o que gritar, ele para
+## tudo, coloca a mão no lugar ferido e curva o corpo de dor. Se a vida zerar,
+## desaba no chão.
+func receber_dano(dano: float, causador: Node3D, corpo_a_corpo: bool = false) -> void:
+    if ia == null or caido:
+        return
+    # Local do ferimento sorteado (toraco/coxas/braços) p/ a mão ir exatamente lá.
+    var opcoes: Array[String] = ["toraco", "toraco", "coxaE", "coxaD", "bracoE", "bracoD"]
+    local_ferimento = opcoes[randi() % opcoes.size()]
+    ia.ser_atingido(dano, causador, corpo_a_corpo)
+    fumando = false
+    _terminar_cigarro()
+    fugindo = false
+    estado = "pausado"
+    tempo_pausa = 9999.0            # fica segurando a dor até a IA decidir
+    dor_pose = 1.0
+    _criar_sangue()
+    morador_atingido.emit(self, dano, causador)
+    if ia.morto:
+        _desabar()
+
+# Pose de dor: braço vai até o local ferido, ombro encolhe, cabeça baixa e
+# joelhos flexionam levemente (curvado sobre a própria dor).
+func _pose_dor() -> void:
+    if raiz == null:
+        return
+    var alvo_local: Vector3 = Vector3(0, 0.2, 0.16)   # padrão: meio do peito
+    match local_ferimento:
+        "coxaE": alvo_local = Vector3(-0.12, -0.55, 0.12)
+        "coxaD": alvo_local = Vector3(0.12, -0.55, 0.12)
+        "bracoE": alvo_local = Vector3(-0.42, -0.05, 0.1)
+        "bracoD": alvo_local = Vector3(0.42, -0.05, 0.1)
+    var braco_usar: Node3D = ombro_e
+    var ante_usar: Node3D = cotovelo_e
+    if alvo_local.x > 0.0:
+        braco_usar = ombro_d
+        ante_usar = cotovelo_d
+    else:
+        braco_usar = ombro_e
+        ante_usar = cotovelo_e
+    # Ombro fecha sobre a ferida; antebraço sobe até o ponto dolorido.
+    braco_usar.rotation.x = lerpf(braco_usar.rotation.x, -1.15, 0.25)
+    braco_usar.rotation.z = lerpf(braco_usar.rotation.z, signf(alvo_local.x) * -0.7, 0.25)
+    ante_usar.rotation.x = lerpf(ante_usar.rotation.x, -1.35, 0.25)
+    # O outro braço também sobe em proteção instintiva.
+    var outro := cotovelo_d if braco_usar == cotovelo_e else cotovelo_e
+    outro.rotation.x = lerpf(outro.rotation.x, -0.8, 0.2)
+    # Corpo curvado: quadril e cabeça pendem para frente, pernas cedem.
+    toraco.rotation.x = lerpf(toraco.rotation.x, 0.5, 0.15)
+    cabeca.rotation.x = lerpf(cabeca.rotation.x, 0.55, 0.15)
+    quadril_e.rotation.x = lerpf(quadril_e.rotation.x, 0.25, 0.2)
+    quadril_d.rotation.x = lerpf(quadril_d.rotation.x, 0.25, 0.2)
+    joelho_e.rotation.x = lerpf(joelho_e.rotation.x, 0.35, 0.2)
+    joelho_d.rotation.x = lerpf(joelho_d.rotation.x, 0.35, 0.2)
+
+func _desabar() -> void:
+    caido = true
+    estado = "parado"
+    fugindo = false
+    dor_pose = 0.0
+    if sangue != null:
+        sangue.emitting = true
+
+func _animar_caida(delta: float) -> void:
+    # Desaba de costas/joelhos e fica imóvel.
+    angulo_caida = lerpf(angulo_caida, PI * 0.5 * 0.92, minf(delta * 5.0, 1.0))
+    if raiz != null:
+        raiz.rotation.x = -angulo_caida
+        var h: float = float(perfil.get("altura", 1.7)) / 1.70
+        raiz.position.y = lerpf(raiz.position.y, 0.28 * h, minf(delta * 5.0, 1.0))
+
+func _comecar_fuga() -> void:
+    if fugindo or caido:
+        return
+    fugindo = true
+    estado = "andando"
+    fumando = false
+    _terminar_cigarro()
+    destino = position + direcao_atual * -10.0
+
+func _parar_de_fugir() -> void:
+    fugindo = false
+    if ia != null:
+        ia.medo = maxf(0.0, ia.medo - 0.4)
+    destino = _novo_destino()
+
+# Partículas de sangue simples no ponto do ferimento (barato p/ Android).
+func _criar_sangue() -> void:
+    if sangue != null:
+        sangue.visible = true
+        sangue.emitting = true
+        return
+    sangue = GPUParticles3D.new()
+    sangue.name = "Sangue"
+    var proc := ParticleProcessMaterial.new()
+    proc.direction = Vector3(0, 0.6, 0.3)
+    proc.spread = 45.0
+    proc.gravity = Vector3(0, -9.0, 0)
+    proc.initial_velocity_min = 0.4
+    proc.initial_velocity_max = 1.1
+    proc.scale_amount_min = 0.015
+    proc.scale_amount_max = 0.035
+    var grad := Gradient.new()
+    grad.set_color(0, Color(0.55, 0.03, 0.03, 0.9))
+    grad.set_color(1, Color(0.35, 0.02, 0.02, 0.0))
+    proc.color_ramp = grad
+    sangue.process_material = proc
+    sangue.amount = 40
+    sangue.lifetime = 1.2
+    sangue.one_shot = true
+    sangue.emitting = true
+    var quad := QuadMesh.new()
+    quad.size = Vector2(0.035, 0.035)
+    var mat := StandardMaterial3D.new()
+    mat.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
+    mat.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+    mat.vertex_color_use_as_albedo = true
+    mat.billboard_mode = BaseMaterial3D.BILLBOARD_PARTICLES
+    quad.material = mat
+    sangue.draw_pass_1 = quad
+    sangue.position = Vector3(0, 0.2, 0.18)
+    toraco.add_child(sangue)
+
+# ---- Ciclo do cigarro: acender (para fumar parado) e apagar/jogar fora ----
+func _acender_cigarro() -> void:
+    fumando = true
+    estado = "pausado"
+    tempo_fumar = randf_range(float(perfil.get("fumar_min", 30.0)), float(perfil.get("fumar_max", 120.0)))
+    tempo_pausa = tempo_fumar
+    ciclo_tragada = randf_range(0.0, 4.0)
+    if fumaça != null:
+        fumaça.visible = true
+        fumaça.emitting = true
+
+func _terminar_cigarro() -> void:
+    fumando = false
+    # Ele "joga o cigarro fora": cigarro e fumaça somem e ele sai andando.
+    if cigarro_mesh != null:
+        cigarro_mesh.visible = false
+    if brasa != null:
+        brasa.light_energy = 0.0
+    if fumaça != null:
+        fumaça.emitting = false
+        fumaça.visible = false
+
+# Brasa e fumaça acompanham as tragadas enquanto ele fuma parado.
+func _process_aderecos(delta: float) -> void:
+    if adereco == "cigarro" and fumando and ponta_cigarro != null:
+        var t: float = fposmod(ciclo_tragada, 4.0) / 4.0
+        var intensidade: float = maxf(0.0, sin(t * PI))
+        brasa.light_energy = lerpf(brasa.light_energy, 0.9 * intensidade, minf(delta * 8.0, 1.0))
+        fumaça.emitting = intensidade > 0.15
+
+# ---- API usada pelo sistema de armas do jogador ----
+## Aplica dano vindo do jogador (tiros/facadas). A IA emocional reage na hora:
+## grita, escolhe a frase e o corpo vai à pose de segurar a ferida.
+func aplicar_dano(dano: float, origem: Vector3, agressor: Node3D, corpo_a_corpo: bool = false) -> void:
+    receber_dano(dano, agressor, corpo_a_corpo)
+    # Pânico contágio: moradores próximos ao tiro também se assustam.
+    var pai := get_parent()
+    if pai != null and pai.has_method("alarme_tiro"):
+        pai.alarme_tiro(global_position, self)
+
+## Grito de dor imediato usado no feedback instantâneo da arma.
+func gritar_dor() -> String:
+    if ia == null:
+        return "AAAAI!"
+    var pool: Array[String] = ia.GRITO_DOR
+    return pool[randi() % pool.size()]
+
+## Chamado quando alguém leva tiro por perto: entra em pânico e sai correndo.
+func susto_pertissimo() -> void:
+    if ia == null or caido or fugindo or estado == "dor":
+        return
+    ia.entrar_em_panico(global_position)
+    _comecar_fuga()
+    destino = _destino_fuga()
+
+func _destino_fuga() -> Vector3:
+    var p := position
+    for i in range(8):
+        var alvo := _novo_destino()
+        if alvo.distance_to(p) > 60.0:
+            return alvo
+    return p + Vector3(randf_range(-1, 1), 0.0, randf_range(-1, 1)).normalized() * 120.0
 
 func _animar(delta: float) -> void:
     var andando: bool = estado == "andando"
-    var velocidade_efetiva: float = velocidade_alvo if andando else 0.0
+    var velocidade_efetiva: float = (velocidade_fuga if fugindo else velocidade_alvo) if andando else 0.0
     var h: float = float(perfil.get("altura", 1.70))
     var passada_m: float = PASSO_POR_ALTURA * h
     if clips.has("walk"):
@@ -288,6 +627,55 @@ func _animar(delta: float) -> void:
         _pose_da_amber(fase_passada, peso_movimento)
     else:
         _pose_basica(fase_passada, peso_movimento)
+    # Segurando a ferida: a pose de dor por cima da animação base.
+    if dor_pose > 0.05 and not caido:
+        _pose_dor()
+        dor_pose = lerpf(dor_pose, 0.0 if ia == null or ia.dor < 0.25 else 1.0, 1.0 - exp(-delta * 2.0))
+    _pose_aderecos()
+    _atualizar_balao(delta)
+
+# Balão de fala desenhado em runtime (Label3D): mostra MUITO RÁPIDO a frase
+# que a IA emocional escolheu ao levar tiro/facada.
+var _balao: Label3D = null
+func _atualizar_balao(_delta: float) -> void:
+    if balao_texto == "" and (_balao == null or not _balao.visible):
+        return
+    if _balao == null:
+        _balao = Label3D.new()
+        _balao.name = "BalaoFala"
+        _balao.position = Vector3(0, 2.05 * (float(perfil.get("altura", 1.7)) / 1.70), 0)
+        _balao.billboard = BaseMaterial3D.BILLBOARD_ENABLED
+        _balao.no_depth_test = true
+        _balao.font_size = 44
+        _balao.outline_size = 10
+        _balao.modulate = Color(1, 1, 1, 1)
+        _balao.background_modulate = Color(0.08, 0.08, 0.1, 0.82)
+        cabeca.add_child(_balao)
+    _balao.text = balao_texto
+    _balao.visible = balao_texto != ""
+
+# Pose dos adereços sobre a pose base: braço do café dobrado à frente (segurando
+# o copo) e, enquanto fuma, o braço direito vai e volta da boca em tragadas.
+func _pose_aderecos() -> void:
+    # Com dor, as mãos vão para a ferida (prioridade sobre café/cigarro).
+    if dor_pose > 0.35 or fugindo:
+        return
+    if adereco == "cafe":
+        var ombro_cafe: Node3D = ombro_d if mao_cafe == "d" else ombro_e
+        var cot_cafe: Node3D = cotovelo_d if mao_cafe == "d" else cotovelo_e
+        # Antebraço dobrado ~90° à frente, na altura da cintura, segurando o copo.
+        cot_cafe.rotation.x = -1.5
+        ombro_cafe.rotation.x = lerpf(ombro_cafe.rotation.x, -0.25, 0.4)
+    elif adereco == "cigarro" and fumando:
+        # Tragada: mão sobe até a boca no pico do ciclo (~4 s por tragada).
+        var t: float = fposmod(ciclo_tragada, 4.0) / 4.0
+        var subir: float = maxf(0.0, sin(t * PI))
+        # Ombro pende levemente para frente e o antebraço dobra em direção à boca.
+        ombro_d.rotation.x = lerpf(clampf(ombro_d.rotation.x, -0.6, 0.6), -0.35, subir)
+        cotovelo_d.rotation.x = lerpf(clampf(cotovelo_d.rotation.x, -1.6, 0.0), -1.75, subir)
+        cigarro_mesh.visible = true
+    elif adereco == "cigarro":
+        cigarro_mesh.visible = false
 
 # Lê as curvas reais da Amber (cabeça, braços, pernas) aplicadas ao esqueleto simples.
 # Convenção do bake: quadriceps = delta X do osso da coxa; joelho dobra com valor

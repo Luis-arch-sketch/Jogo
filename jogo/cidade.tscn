@@ -11,6 +11,8 @@
 [ext_resource type="Script" path="res://scripts/bairros_500.gd" id="8_bairros500"]
 [ext_resource type="Script" path="res://scripts/mapa_interativo.gd" id="9_mapa"]
 [ext_resource type="Script" path="res://scripts/multidao_cidade.gd" id="10_multidao"]
+[ext_resource type="Script" path="res://scripts/armas_sistema.gd" id="11_armas"]
+[ext_resource type="Script" path="res://scripts/loja_armas.gd" id="12_loja"]
 
 [sub_resource type="ProceduralSkyMaterial" id="Ceu_Natural"]
 sky_top_color = Color(0.34, 0.51, 0.70, 1)
@@ -122,6 +124,13 @@ script = ExtResource("8_bairros500")
 
 [node name="Multidao_Cidade" type="Node3D" parent="."]
 script = ExtResource("10_multidao")
+
+[node name="Armas" type="Node3D" parent="."]
+script = ExtResource("11_armas")
+
+[node name="Loja_Armas" type="Node3D" parent="."]
+position = Vector3(26, 0, 18)
+script = ExtResource("12_loja")
 
 [node name="Desempenho" type="Node" parent="."]
 script = ExtResource("5_desempenho")
