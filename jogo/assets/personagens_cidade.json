@@ -1,0 +1,4326 @@
+{
+ "gerado_em": "2026-10-03",
+ "total": 120,
+ "personagens": [
+  {
+   "id": "c000",
+   "altura": 1.787,
+   "largura": 0.888,
+   "magreza": 0.933,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.76,
+    0.56,
+    0.4
+   ],
+   "cor_cabelo": [
+    0.35,
+    0.22,
+    0.12
+   ],
+   "cor_camisa": [
+    0.7,
+    0.45,
+    0.5
+   ],
+   "cor_calca": [
+    0.45,
+    0.4,
+    0.32
+   ],
+   "cor_sapato": [
+    0.12,
+    0.11,
+    0.1
+   ],
+   "velocidade": 1.17,
+   "pausa_min": 2.9,
+   "pausa_max": 14.1,
+   "fase": 0.027
+  },
+  {
+   "id": "c001",
+   "altura": 1.624,
+   "largura": 1.075,
+   "magreza": 1.013,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.3,
+    0.2,
+    0.15
+   ],
+   "cor_cabelo": [
+    0.1,
+    0.08,
+    0.07
+   ],
+   "cor_camisa": [
+    0.35,
+    0.65,
+    0.4
+   ],
+   "cor_calca": [
+    0.35,
+    0.35,
+    0.38
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.35,
+   "pausa_min": 2.6,
+   "pausa_max": 19.5,
+   "fase": 0.337
+  },
+  {
+   "id": "c002",
+   "altura": 1.584,
+   "largura": 0.909,
+   "magreza": 1.104,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.85,
+    0.68,
+    0.55
+   ],
+   "cor_cabelo": [
+    0.15,
+    0.14,
+    0.16
+   ],
+   "cor_camisa": [
+    0.4,
+    0.6,
+    0.65
+   ],
+   "cor_calca": [
+    0.2,
+    0.25,
+    0.4
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.2,
+   "pausa_min": 3.2,
+   "pausa_max": 15.5,
+   "fase": 0.885
+  },
+  {
+   "id": "c003",
+   "altura": 1.684,
+   "largura": 0.938,
+   "magreza": 0.871,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.3,
+    0.2,
+    0.15
+   ],
+   "cor_cabelo": [
+    0.35,
+    0.22,
+    0.12
+   ],
+   "cor_camisa": [
+    0.85,
+    0.75,
+    0.35
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.12,
+    0.11,
+    0.1
+   ],
+   "velocidade": 1.38,
+   "pausa_min": 3.8,
+   "pausa_max": 18.0,
+   "fase": 0.163
+  },
+  {
+   "id": "c004",
+   "altura": 1.681,
+   "largura": 1.081,
+   "magreza": 1.061,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.76,
+    0.56,
+    0.4
+   ],
+   "cor_cabelo": [
+    0.6,
+    0.45,
+    0.25
+   ],
+   "cor_camisa": [
+    0.4,
+    0.6,
+    0.65
+   ],
+   "cor_calca": [
+    0.35,
+    0.35,
+    0.38
+   ],
+   "cor_sapato": [
+    0.8,
+    0.78,
+    0.72
+   ],
+   "velocidade": 1.25,
+   "pausa_min": 3.5,
+   "pausa_max": 19.9,
+   "fase": 0.64
+  },
+  {
+   "id": "c005",
+   "altura": 1.756,
+   "largura": 1.085,
+   "magreza": 1.103,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.45,
+    0.3,
+    0.21
+   ],
+   "cor_cabelo": [
+    0.1,
+    0.08,
+    0.07
+   ],
+   "cor_camisa": [
+    0.85,
+    0.85,
+    0.85
+   ],
+   "cor_calca": [
+    0.45,
+    0.4,
+    0.32
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.19,
+   "pausa_min": 5.7,
+   "pausa_max": 14.8,
+   "fase": 0.718
+  },
+  {
+   "id": "c006",
+   "altura": 1.629,
+   "largura": 1.03,
+   "magreza": 1.115,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.6,
+    0.41,
+    0.29
+   ],
+   "cor_cabelo": [
+    0.2,
+    0.12,
+    0.1
+   ],
+   "cor_camisa": [
+    0.35,
+    0.65,
+    0.4
+   ],
+   "cor_calca": [
+    0.25,
+    0.25,
+    0.27
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.6,
+   "pausa_min": 3.7,
+   "pausa_max": 15.0,
+   "fase": 0.362
+  },
+  {
+   "id": "c007",
+   "altura": 1.919,
+   "largura": 0.921,
+   "magreza": 0.998,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.76,
+    0.56,
+    0.4
+   ],
+   "cor_cabelo": [
+    0.6,
+    0.45,
+    0.25
+   ],
+   "cor_camisa": [
+    0.35,
+    0.65,
+    0.4
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.51,
+   "pausa_min": 3.5,
+   "pausa_max": 15.2,
+   "fase": 0.468
+  },
+  {
+   "id": "c008",
+   "altura": 1.643,
+   "largura": 1.046,
+   "magreza": 1.133,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.76,
+    0.56,
+    0.4
+   ],
+   "cor_cabelo": [
+    0.2,
+    0.12,
+    0.1
+   ],
+   "cor_camisa": [
+    0.85,
+    0.85,
+    0.85
+   ],
+   "cor_calca": [
+    0.2,
+    0.25,
+    0.4
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.41,
+   "pausa_min": 3.8,
+   "pausa_max": 19.4,
+   "fase": 0.876
+  },
+  {
+   "id": "c009",
+   "altura": 1.647,
+   "largura": 1.03,
+   "magreza": 0.904,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.3,
+    0.2,
+    0.15
+   ],
+   "cor_cabelo": [
+    0.75,
+    0.65,
+    0.5
+   ],
+   "cor_camisa": [
+    0.35,
+    0.65,
+    0.4
+   ],
+   "cor_calca": [
+    0.15,
+    0.15,
+    0.17
+   ],
+   "cor_sapato": [
+    0.8,
+    0.78,
+    0.72
+   ],
+   "velocidade": 1.47,
+   "pausa_min": 5.1,
+   "pausa_max": 14.4,
+   "fase": 0.001
+  },
+  {
+   "id": "c010",
+   "altura": 1.67,
+   "largura": 0.886,
+   "magreza": 1.129,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.3,
+    0.2,
+    0.15
+   ],
+   "cor_cabelo": [
+    0.75,
+    0.65,
+    0.5
+   ],
+   "cor_camisa": [
+    0.8,
+    0.3,
+    0.3
+   ],
+   "cor_calca": [
+    0.25,
+    0.25,
+    0.27
+   ],
+   "cor_sapato": [
+    0.12,
+    0.11,
+    0.1
+   ],
+   "velocidade": 1.2,
+   "pausa_min": 3.9,
+   "pausa_max": 8.8,
+   "fase": 0.761
+  },
+  {
+   "id": "c011",
+   "altura": 1.833,
+   "largura": 0.919,
+   "magreza": 0.993,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.3,
+    0.2,
+    0.15
+   ],
+   "cor_cabelo": [
+    0.55,
+    0.3,
+    0.2
+   ],
+   "cor_camisa": [
+    0.85,
+    0.75,
+    0.35
+   ],
+   "cor_calca": [
+    0.3,
+    0.22,
+    0.2
+   ],
+   "cor_sapato": [
+    0.8,
+    0.78,
+    0.72
+   ],
+   "velocidade": 1.58,
+   "pausa_min": 3.6,
+   "pausa_max": 16.1,
+   "fase": 0.373
+  },
+  {
+   "id": "c012",
+   "altura": 1.883,
+   "largura": 1.015,
+   "magreza": 0.924,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.85,
+    0.68,
+    0.55
+   ],
+   "cor_cabelo": [
+    0.75,
+    0.65,
+    0.5
+   ],
+   "cor_camisa": [
+    0.7,
+    0.45,
+    0.5
+   ],
+   "cor_calca": [
+    0.25,
+    0.25,
+    0.27
+   ],
+   "cor_sapato": [
+    0.12,
+    0.11,
+    0.1
+   ],
+   "velocidade": 1.19,
+   "pausa_min": 4.5,
+   "pausa_max": 10.7,
+   "fase": 0.905
+  },
+  {
+   "id": "c013",
+   "altura": 1.868,
+   "largura": 0.901,
+   "magreza": 0.921,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.45,
+    0.3,
+    0.21
+   ],
+   "cor_cabelo": [
+    0.6,
+    0.45,
+    0.25
+   ],
+   "cor_camisa": [
+    0.7,
+    0.45,
+    0.5
+   ],
+   "cor_calca": [
+    0.3,
+    0.22,
+    0.2
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.3,
+   "pausa_min": 3.9,
+   "pausa_max": 12.9,
+   "fase": 0.094
+  },
+  {
+   "id": "c014",
+   "altura": 1.794,
+   "largura": 0.986,
+   "magreza": 0.973,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.85,
+    0.68,
+    0.55
+   ],
+   "cor_cabelo": [
+    0.35,
+    0.22,
+    0.12
+   ],
+   "cor_camisa": [
+    0.8,
+    0.3,
+    0.3
+   ],
+   "cor_calca": [
+    0.45,
+    0.4,
+    0.32
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.63,
+   "pausa_min": 2.4,
+   "pausa_max": 10.3,
+   "fase": 0.536
+  },
+  {
+   "id": "c015",
+   "altura": 1.602,
+   "largura": 0.935,
+   "magreza": 0.989,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.76,
+    0.56,
+    0.4
+   ],
+   "cor_cabelo": [
+    0.1,
+    0.08,
+    0.07
+   ],
+   "cor_camisa": [
+    0.4,
+    0.6,
+    0.65
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.12,
+    0.11,
+    0.1
+   ],
+   "velocidade": 1.73,
+   "pausa_min": 5.7,
+   "pausa_max": 18.2,
+   "fase": 0.166
+  },
+  {
+   "id": "c016",
+   "altura": 1.73,
+   "largura": 0.944,
+   "magreza": 0.97,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.53,
+    0.36,
+    0.25
+   ],
+   "cor_cabelo": [
+    0.1,
+    0.08,
+    0.07
+   ],
+   "cor_camisa": [
+    0.25,
+    0.25,
+    0.28
+   ],
+   "cor_calca": [
+    0.15,
+    0.15,
+    0.17
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.32,
+   "pausa_min": 4.8,
+   "pausa_max": 16.8,
+   "fase": 0.783
+  },
+  {
+   "id": "c017",
+   "altura": 1.795,
+   "largura": 1.026,
+   "magreza": 0.907,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.85,
+    0.68,
+    0.55
+   ],
+   "cor_cabelo": [
+    0.1,
+    0.08,
+    0.07
+   ],
+   "cor_camisa": [
+    0.85,
+    0.85,
+    0.85
+   ],
+   "cor_calca": [
+    0.2,
+    0.25,
+    0.4
+   ],
+   "cor_sapato": [
+    0.12,
+    0.11,
+    0.1
+   ],
+   "velocidade": 1.5,
+   "pausa_min": 4.0,
+   "pausa_max": 18.2,
+   "fase": 0.157
+  },
+  {
+   "id": "c018",
+   "altura": 1.905,
+   "largura": 0.904,
+   "magreza": 0.906,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.45,
+    0.3,
+    0.21
+   ],
+   "cor_cabelo": [
+    0.55,
+    0.3,
+    0.2
+   ],
+   "cor_camisa": [
+    0.3,
+    0.5,
+    0.8
+   ],
+   "cor_calca": [
+    0.3,
+    0.22,
+    0.2
+   ],
+   "cor_sapato": [
+    0.8,
+    0.78,
+    0.72
+   ],
+   "velocidade": 1.5,
+   "pausa_min": 2.2,
+   "pausa_max": 9.0,
+   "fase": 0.657
+  },
+  {
+   "id": "c019",
+   "altura": 1.759,
+   "largura": 0.975,
+   "magreza": 0.928,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.92,
+    0.78,
+    0.66
+   ],
+   "cor_cabelo": [
+    0.75,
+    0.65,
+    0.5
+   ],
+   "cor_camisa": [
+    0.6,
+    0.4,
+    0.7
+   ],
+   "cor_calca": [
+    0.45,
+    0.4,
+    0.32
+   ],
+   "cor_sapato": [
+    0.8,
+    0.78,
+    0.72
+   ],
+   "velocidade": 1.55,
+   "pausa_min": 3.2,
+   "pausa_max": 11.8,
+   "fase": 0.752
+  },
+  {
+   "id": "c020",
+   "altura": 1.577,
+   "largura": 1.017,
+   "magreza": 1.15,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.76,
+    0.56,
+    0.4
+   ],
+   "cor_cabelo": [
+    0.75,
+    0.65,
+    0.5
+   ],
+   "cor_camisa": [
+    0.4,
+    0.6,
+    0.65
+   ],
+   "cor_calca": [
+    0.15,
+    0.15,
+    0.17
+   ],
+   "cor_sapato": [
+    0.8,
+    0.78,
+    0.72
+   ],
+   "velocidade": 1.71,
+   "pausa_min": 5.5,
+   "pausa_max": 18.6,
+   "fase": 0.37
+  },
+  {
+   "id": "c021",
+   "altura": 1.608,
+   "largura": 1.13,
+   "magreza": 1.061,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.85,
+    0.68,
+    0.55
+   ],
+   "cor_cabelo": [
+    0.2,
+    0.12,
+    0.1
+   ],
+   "cor_camisa": [
+    0.3,
+    0.5,
+    0.8
+   ],
+   "cor_calca": [
+    0.25,
+    0.25,
+    0.27
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.22,
+   "pausa_min": 2.4,
+   "pausa_max": 14.6,
+   "fase": 0.272
+  },
+  {
+   "id": "c022",
+   "altura": 1.774,
+   "largura": 1.095,
+   "magreza": 0.911,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.3,
+    0.2,
+    0.15
+   ],
+   "cor_cabelo": [
+    0.15,
+    0.14,
+    0.16
+   ],
+   "cor_camisa": [
+    0.6,
+    0.4,
+    0.7
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.12,
+    0.11,
+    0.1
+   ],
+   "velocidade": 1.21,
+   "pausa_min": 3.7,
+   "pausa_max": 11.3,
+   "fase": 0.004
+  },
+  {
+   "id": "c023",
+   "altura": 1.835,
+   "largura": 1.071,
+   "magreza": 0.929,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.53,
+    0.36,
+    0.25
+   ],
+   "cor_cabelo": [
+    0.1,
+    0.08,
+    0.07
+   ],
+   "cor_camisa": [
+    0.3,
+    0.5,
+    0.8
+   ],
+   "cor_calca": [
+    0.2,
+    0.25,
+    0.4
+   ],
+   "cor_sapato": [
+    0.8,
+    0.78,
+    0.72
+   ],
+   "velocidade": 1.48,
+   "pausa_min": 5.3,
+   "pausa_max": 15.0,
+   "fase": 0.148
+  },
+  {
+   "id": "c024",
+   "altura": 1.597,
+   "largura": 0.972,
+   "magreza": 1.12,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.85,
+    0.68,
+    0.55
+   ],
+   "cor_cabelo": [
+    0.45,
+    0.42,
+    0.4
+   ],
+   "cor_camisa": [
+    0.85,
+    0.75,
+    0.35
+   ],
+   "cor_calca": [
+    0.35,
+    0.35,
+    0.38
+   ],
+   "cor_sapato": [
+    0.8,
+    0.78,
+    0.72
+   ],
+   "velocidade": 1.55,
+   "pausa_min": 3.4,
+   "pausa_max": 14.7,
+   "fase": 0.875
+  },
+  {
+   "id": "c025",
+   "altura": 1.91,
+   "largura": 1.105,
+   "magreza": 1.128,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.6,
+    0.41,
+    0.29
+   ],
+   "cor_cabelo": [
+    0.6,
+    0.45,
+    0.25
+   ],
+   "cor_camisa": [
+    0.25,
+    0.25,
+    0.28
+   ],
+   "cor_calca": [
+    0.2,
+    0.25,
+    0.4
+   ],
+   "cor_sapato": [
+    0.8,
+    0.78,
+    0.72
+   ],
+   "velocidade": 1.59,
+   "pausa_min": 3.3,
+   "pausa_max": 19.2,
+   "fase": 0.802
+  },
+  {
+   "id": "c026",
+   "altura": 1.87,
+   "largura": 1.123,
+   "magreza": 0.93,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.76,
+    0.56,
+    0.4
+   ],
+   "cor_cabelo": [
+    0.55,
+    0.3,
+    0.2
+   ],
+   "cor_camisa": [
+    0.8,
+    0.3,
+    0.3
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.28,
+   "pausa_min": 5.3,
+   "pausa_max": 13.5,
+   "fase": 0.305
+  },
+  {
+   "id": "c027",
+   "altura": 1.844,
+   "largura": 0.948,
+   "magreza": 0.857,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.92,
+    0.78,
+    0.66
+   ],
+   "cor_cabelo": [
+    0.2,
+    0.12,
+    0.1
+   ],
+   "cor_camisa": [
+    0.3,
+    0.5,
+    0.8
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.36,
+   "pausa_min": 4.0,
+   "pausa_max": 16.2,
+   "fase": 0.844
+  },
+  {
+   "id": "c028",
+   "altura": 1.673,
+   "largura": 0.888,
+   "magreza": 1.113,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.3,
+    0.2,
+    0.15
+   ],
+   "cor_cabelo": [
+    0.1,
+    0.08,
+    0.07
+   ],
+   "cor_camisa": [
+    0.3,
+    0.5,
+    0.8
+   ],
+   "cor_calca": [
+    0.3,
+    0.22,
+    0.2
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.36,
+   "pausa_min": 5.1,
+   "pausa_max": 13.2,
+   "fase": 0.984
+  },
+  {
+   "id": "c029",
+   "altura": 1.593,
+   "largura": 1.15,
+   "magreza": 0.907,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.53,
+    0.36,
+    0.25
+   ],
+   "cor_cabelo": [
+    0.1,
+    0.08,
+    0.07
+   ],
+   "cor_camisa": [
+    0.4,
+    0.6,
+    0.65
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.8,
+    0.78,
+    0.72
+   ],
+   "velocidade": 1.37,
+   "pausa_min": 2.3,
+   "pausa_max": 16.0,
+   "fase": 0.33
+  },
+  {
+   "id": "c030",
+   "altura": 1.666,
+   "largura": 1.134,
+   "magreza": 1.066,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.3,
+    0.2,
+    0.15
+   ],
+   "cor_cabelo": [
+    0.55,
+    0.3,
+    0.2
+   ],
+   "cor_camisa": [
+    0.85,
+    0.85,
+    0.85
+   ],
+   "cor_calca": [
+    0.45,
+    0.4,
+    0.32
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.48,
+   "pausa_min": 2.8,
+   "pausa_max": 16.0,
+   "fase": 0.379
+  },
+  {
+   "id": "c031",
+   "altura": 1.827,
+   "largura": 0.932,
+   "magreza": 1.021,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.85,
+    0.68,
+    0.55
+   ],
+   "cor_cabelo": [
+    0.2,
+    0.12,
+    0.1
+   ],
+   "cor_camisa": [
+    0.6,
+    0.4,
+    0.7
+   ],
+   "cor_calca": [
+    0.25,
+    0.25,
+    0.27
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.62,
+   "pausa_min": 4.4,
+   "pausa_max": 11.9,
+   "fase": 0.442
+  },
+  {
+   "id": "c032",
+   "altura": 1.8,
+   "largura": 1.033,
+   "magreza": 1.088,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.6,
+    0.41,
+    0.29
+   ],
+   "cor_cabelo": [
+    0.35,
+    0.22,
+    0.12
+   ],
+   "cor_camisa": [
+    0.6,
+    0.4,
+    0.7
+   ],
+   "cor_calca": [
+    0.3,
+    0.22,
+    0.2
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.21,
+   "pausa_min": 5.8,
+   "pausa_max": 10.8,
+   "fase": 0.31
+  },
+  {
+   "id": "c033",
+   "altura": 1.848,
+   "largura": 0.924,
+   "magreza": 0.864,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.76,
+    0.56,
+    0.4
+   ],
+   "cor_cabelo": [
+    0.15,
+    0.14,
+    0.16
+   ],
+   "cor_camisa": [
+    0.25,
+    0.25,
+    0.28
+   ],
+   "cor_calca": [
+    0.35,
+    0.35,
+    0.38
+   ],
+   "cor_sapato": [
+    0.8,
+    0.78,
+    0.72
+   ],
+   "velocidade": 1.58,
+   "pausa_min": 3.5,
+   "pausa_max": 12.8,
+   "fase": 0.148
+  },
+  {
+   "id": "c034",
+   "altura": 1.804,
+   "largura": 1.148,
+   "magreza": 1.108,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.53,
+    0.36,
+    0.25
+   ],
+   "cor_cabelo": [
+    0.75,
+    0.65,
+    0.5
+   ],
+   "cor_camisa": [
+    0.35,
+    0.65,
+    0.4
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.18,
+   "pausa_min": 3.0,
+   "pausa_max": 18.2,
+   "fase": 0.456
+  },
+  {
+   "id": "c035",
+   "altura": 1.847,
+   "largura": 1.08,
+   "magreza": 1.146,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.7,
+    0.5,
+    0.36
+   ],
+   "cor_cabelo": [
+    0.55,
+    0.3,
+    0.2
+   ],
+   "cor_camisa": [
+    0.4,
+    0.6,
+    0.65
+   ],
+   "cor_calca": [
+    0.45,
+    0.4,
+    0.32
+   ],
+   "cor_sapato": [
+    0.8,
+    0.78,
+    0.72
+   ],
+   "velocidade": 1.6,
+   "pausa_min": 3.9,
+   "pausa_max": 11.1,
+   "fase": 0.247
+  },
+  {
+   "id": "c036",
+   "altura": 1.786,
+   "largura": 1.11,
+   "magreza": 1.006,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.3,
+    0.2,
+    0.15
+   ],
+   "cor_cabelo": [
+    0.15,
+    0.14,
+    0.16
+   ],
+   "cor_camisa": [
+    0.3,
+    0.5,
+    0.8
+   ],
+   "cor_calca": [
+    0.35,
+    0.35,
+    0.38
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.29,
+   "pausa_min": 3.3,
+   "pausa_max": 18.7,
+   "fase": 0.081
+  },
+  {
+   "id": "c037",
+   "altura": 1.606,
+   "largura": 0.995,
+   "magreza": 0.896,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.53,
+    0.36,
+    0.25
+   ],
+   "cor_cabelo": [
+    0.55,
+    0.3,
+    0.2
+   ],
+   "cor_camisa": [
+    0.85,
+    0.85,
+    0.85
+   ],
+   "cor_calca": [
+    0.3,
+    0.22,
+    0.2
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.4,
+   "pausa_min": 2.8,
+   "pausa_max": 13.0,
+   "fase": 0.905
+  },
+  {
+   "id": "c038",
+   "altura": 1.766,
+   "largura": 1.089,
+   "magreza": 1.107,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.53,
+    0.36,
+    0.25
+   ],
+   "cor_cabelo": [
+    0.15,
+    0.14,
+    0.16
+   ],
+   "cor_camisa": [
+    0.8,
+    0.3,
+    0.3
+   ],
+   "cor_calca": [
+    0.15,
+    0.15,
+    0.17
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.6,
+   "pausa_min": 5.4,
+   "pausa_max": 19.4,
+   "fase": 0.419
+  },
+  {
+   "id": "c039",
+   "altura": 1.827,
+   "largura": 1.044,
+   "magreza": 1.031,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.45,
+    0.3,
+    0.21
+   ],
+   "cor_cabelo": [
+    0.2,
+    0.12,
+    0.1
+   ],
+   "cor_camisa": [
+    0.25,
+    0.25,
+    0.28
+   ],
+   "cor_calca": [
+    0.45,
+    0.4,
+    0.32
+   ],
+   "cor_sapato": [
+    0.12,
+    0.11,
+    0.1
+   ],
+   "velocidade": 1.38,
+   "pausa_min": 4.7,
+   "pausa_max": 17.6,
+   "fase": 0.724
+  },
+  {
+   "id": "c040",
+   "altura": 1.861,
+   "largura": 1.156,
+   "magreza": 1.144,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.53,
+    0.36,
+    0.25
+   ],
+   "cor_cabelo": [
+    0.1,
+    0.08,
+    0.07
+   ],
+   "cor_camisa": [
+    0.3,
+    0.5,
+    0.8
+   ],
+   "cor_calca": [
+    0.35,
+    0.35,
+    0.38
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.23,
+   "pausa_min": 3.8,
+   "pausa_max": 8.6,
+   "fase": 0.379
+  },
+  {
+   "id": "c041",
+   "altura": 1.628,
+   "largura": 0.978,
+   "magreza": 1.078,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.53,
+    0.36,
+    0.25
+   ],
+   "cor_cabelo": [
+    0.2,
+    0.12,
+    0.1
+   ],
+   "cor_camisa": [
+    0.3,
+    0.5,
+    0.8
+   ],
+   "cor_calca": [
+    0.45,
+    0.4,
+    0.32
+   ],
+   "cor_sapato": [
+    0.12,
+    0.11,
+    0.1
+   ],
+   "velocidade": 1.6,
+   "pausa_min": 2.2,
+   "pausa_max": 19.4,
+   "fase": 0.224
+  },
+  {
+   "id": "c042",
+   "altura": 1.575,
+   "largura": 1.167,
+   "magreza": 0.862,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.45,
+    0.3,
+    0.21
+   ],
+   "cor_cabelo": [
+    0.75,
+    0.65,
+    0.5
+   ],
+   "cor_camisa": [
+    0.8,
+    0.3,
+    0.3
+   ],
+   "cor_calca": [
+    0.3,
+    0.22,
+    0.2
+   ],
+   "cor_sapato": [
+    0.8,
+    0.78,
+    0.72
+   ],
+   "velocidade": 1.29,
+   "pausa_min": 3.9,
+   "pausa_max": 9.4,
+   "fase": 0.948
+  },
+  {
+   "id": "c043",
+   "altura": 1.722,
+   "largura": 0.957,
+   "magreza": 0.961,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.76,
+    0.56,
+    0.4
+   ],
+   "cor_cabelo": [
+    0.6,
+    0.45,
+    0.25
+   ],
+   "cor_camisa": [
+    0.6,
+    0.4,
+    0.7
+   ],
+   "cor_calca": [
+    0.2,
+    0.25,
+    0.4
+   ],
+   "cor_sapato": [
+    0.12,
+    0.11,
+    0.1
+   ],
+   "velocidade": 1.71,
+   "pausa_min": 4.3,
+   "pausa_max": 18.9,
+   "fase": 0.375
+  },
+  {
+   "id": "c044",
+   "altura": 1.898,
+   "largura": 0.939,
+   "magreza": 1.028,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.45,
+    0.3,
+    0.21
+   ],
+   "cor_cabelo": [
+    0.35,
+    0.22,
+    0.12
+   ],
+   "cor_camisa": [
+    0.6,
+    0.4,
+    0.7
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.12,
+    0.11,
+    0.1
+   ],
+   "velocidade": 1.63,
+   "pausa_min": 4.3,
+   "pausa_max": 8.5,
+   "fase": 0.533
+  },
+  {
+   "id": "c045",
+   "altura": 1.795,
+   "largura": 0.901,
+   "magreza": 1.044,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.53,
+    0.36,
+    0.25
+   ],
+   "cor_cabelo": [
+    0.15,
+    0.14,
+    0.16
+   ],
+   "cor_camisa": [
+    0.3,
+    0.5,
+    0.8
+   ],
+   "cor_calca": [
+    0.45,
+    0.4,
+    0.32
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.53,
+   "pausa_min": 5.3,
+   "pausa_max": 16.5,
+   "fase": 0.435
+  },
+  {
+   "id": "c046",
+   "altura": 1.822,
+   "largura": 1.17,
+   "magreza": 0.931,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.7,
+    0.5,
+    0.36
+   ],
+   "cor_cabelo": [
+    0.15,
+    0.14,
+    0.16
+   ],
+   "cor_camisa": [
+    0.25,
+    0.25,
+    0.28
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.34,
+   "pausa_min": 3.0,
+   "pausa_max": 19.2,
+   "fase": 0.279
+  },
+  {
+   "id": "c047",
+   "altura": 1.717,
+   "largura": 1.105,
+   "magreza": 1.021,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.92,
+    0.78,
+    0.66
+   ],
+   "cor_cabelo": [
+    0.1,
+    0.08,
+    0.07
+   ],
+   "cor_camisa": [
+    0.9,
+    0.55,
+    0.35
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.26,
+   "pausa_min": 2.8,
+   "pausa_max": 17.6,
+   "fase": 0.34
+  },
+  {
+   "id": "c048",
+   "altura": 1.876,
+   "largura": 1.09,
+   "magreza": 0.933,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.45,
+    0.3,
+    0.21
+   ],
+   "cor_cabelo": [
+    0.35,
+    0.22,
+    0.12
+   ],
+   "cor_camisa": [
+    0.85,
+    0.75,
+    0.35
+   ],
+   "cor_calca": [
+    0.35,
+    0.35,
+    0.38
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.44,
+   "pausa_min": 5.0,
+   "pausa_max": 16.3,
+   "fase": 0.646
+  },
+  {
+   "id": "c049",
+   "altura": 1.732,
+   "largura": 1.118,
+   "magreza": 0.878,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.45,
+    0.3,
+    0.21
+   ],
+   "cor_cabelo": [
+    0.2,
+    0.12,
+    0.1
+   ],
+   "cor_camisa": [
+    0.7,
+    0.45,
+    0.5
+   ],
+   "cor_calca": [
+    0.15,
+    0.15,
+    0.17
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.48,
+   "pausa_min": 3.4,
+   "pausa_max": 20.0,
+   "fase": 0.55
+  },
+  {
+   "id": "c050",
+   "altura": 1.68,
+   "largura": 1.016,
+   "magreza": 0.942,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.45,
+    0.3,
+    0.21
+   ],
+   "cor_cabelo": [
+    0.45,
+    0.42,
+    0.4
+   ],
+   "cor_camisa": [
+    0.3,
+    0.5,
+    0.8
+   ],
+   "cor_calca": [
+    0.35,
+    0.35,
+    0.38
+   ],
+   "cor_sapato": [
+    0.8,
+    0.78,
+    0.72
+   ],
+   "velocidade": 1.26,
+   "pausa_min": 5.0,
+   "pausa_max": 11.3,
+   "fase": 0.59
+  },
+  {
+   "id": "c051",
+   "altura": 1.831,
+   "largura": 1.059,
+   "magreza": 1.144,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.92,
+    0.78,
+    0.66
+   ],
+   "cor_cabelo": [
+    0.6,
+    0.45,
+    0.25
+   ],
+   "cor_camisa": [
+    0.6,
+    0.4,
+    0.7
+   ],
+   "cor_calca": [
+    0.2,
+    0.25,
+    0.4
+   ],
+   "cor_sapato": [
+    0.8,
+    0.78,
+    0.72
+   ],
+   "velocidade": 1.31,
+   "pausa_min": 5.9,
+   "pausa_max": 14.6,
+   "fase": 0.697
+  },
+  {
+   "id": "c052",
+   "altura": 1.597,
+   "largura": 1.141,
+   "magreza": 0.997,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.3,
+    0.2,
+    0.15
+   ],
+   "cor_cabelo": [
+    0.15,
+    0.14,
+    0.16
+   ],
+   "cor_camisa": [
+    0.9,
+    0.55,
+    0.35
+   ],
+   "cor_calca": [
+    0.45,
+    0.4,
+    0.32
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.26,
+   "pausa_min": 2.2,
+   "pausa_max": 19.3,
+   "fase": 0.478
+  },
+  {
+   "id": "c053",
+   "altura": 1.854,
+   "largura": 1.0,
+   "magreza": 0.872,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.85,
+    0.68,
+    0.55
+   ],
+   "cor_cabelo": [
+    0.6,
+    0.45,
+    0.25
+   ],
+   "cor_camisa": [
+    0.35,
+    0.65,
+    0.4
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.2,
+   "pausa_min": 3.0,
+   "pausa_max": 14.7,
+   "fase": 0.416
+  },
+  {
+   "id": "c054",
+   "altura": 1.771,
+   "largura": 1.066,
+   "magreza": 1.083,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.7,
+    0.5,
+    0.36
+   ],
+   "cor_cabelo": [
+    0.2,
+    0.12,
+    0.1
+   ],
+   "cor_camisa": [
+    0.7,
+    0.45,
+    0.5
+   ],
+   "cor_calca": [
+    0.45,
+    0.4,
+    0.32
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.49,
+   "pausa_min": 2.2,
+   "pausa_max": 19.5,
+   "fase": 0.099
+  },
+  {
+   "id": "c055",
+   "altura": 1.832,
+   "largura": 1.068,
+   "magreza": 0.929,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.45,
+    0.3,
+    0.21
+   ],
+   "cor_cabelo": [
+    0.6,
+    0.45,
+    0.25
+   ],
+   "cor_camisa": [
+    0.4,
+    0.6,
+    0.65
+   ],
+   "cor_calca": [
+    0.2,
+    0.25,
+    0.4
+   ],
+   "cor_sapato": [
+    0.8,
+    0.78,
+    0.72
+   ],
+   "velocidade": 1.15,
+   "pausa_min": 3.8,
+   "pausa_max": 15.1,
+   "fase": 0.291
+  },
+  {
+   "id": "c056",
+   "altura": 1.636,
+   "largura": 1.092,
+   "magreza": 1.061,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.45,
+    0.3,
+    0.21
+   ],
+   "cor_cabelo": [
+    0.2,
+    0.12,
+    0.1
+   ],
+   "cor_camisa": [
+    0.7,
+    0.45,
+    0.5
+   ],
+   "cor_calca": [
+    0.35,
+    0.35,
+    0.38
+   ],
+   "cor_sapato": [
+    0.8,
+    0.78,
+    0.72
+   ],
+   "velocidade": 1.41,
+   "pausa_min": 4.2,
+   "pausa_max": 15.8,
+   "fase": 0.908
+  },
+  {
+   "id": "c057",
+   "altura": 1.856,
+   "largura": 0.901,
+   "magreza": 0.9,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.3,
+    0.2,
+    0.15
+   ],
+   "cor_cabelo": [
+    0.15,
+    0.14,
+    0.16
+   ],
+   "cor_camisa": [
+    0.3,
+    0.5,
+    0.8
+   ],
+   "cor_calca": [
+    0.45,
+    0.4,
+    0.32
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.57,
+   "pausa_min": 5.8,
+   "pausa_max": 14.0,
+   "fase": 0.494
+  },
+  {
+   "id": "c058",
+   "altura": 1.58,
+   "largura": 0.892,
+   "magreza": 0.98,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.3,
+    0.2,
+    0.15
+   ],
+   "cor_cabelo": [
+    0.1,
+    0.08,
+    0.07
+   ],
+   "cor_camisa": [
+    0.3,
+    0.5,
+    0.8
+   ],
+   "cor_calca": [
+    0.25,
+    0.25,
+    0.27
+   ],
+   "cor_sapato": [
+    0.12,
+    0.11,
+    0.1
+   ],
+   "velocidade": 1.75,
+   "pausa_min": 4.7,
+   "pausa_max": 11.2,
+   "fase": 0.04
+  },
+  {
+   "id": "c059",
+   "altura": 1.83,
+   "largura": 1.021,
+   "magreza": 1.045,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.53,
+    0.36,
+    0.25
+   ],
+   "cor_cabelo": [
+    0.15,
+    0.14,
+    0.16
+   ],
+   "cor_camisa": [
+    0.3,
+    0.5,
+    0.8
+   ],
+   "cor_calca": [
+    0.45,
+    0.4,
+    0.32
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.4,
+   "pausa_min": 3.3,
+   "pausa_max": 9.3,
+   "fase": 0.161
+  },
+  {
+   "id": "c060",
+   "altura": 1.702,
+   "largura": 1.029,
+   "magreza": 1.049,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.85,
+    0.68,
+    0.55
+   ],
+   "cor_cabelo": [
+    0.15,
+    0.14,
+    0.16
+   ],
+   "cor_camisa": [
+    0.3,
+    0.5,
+    0.8
+   ],
+   "cor_calca": [
+    0.15,
+    0.15,
+    0.17
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.34,
+   "pausa_min": 5.9,
+   "pausa_max": 12.9,
+   "fase": 0.515
+  },
+  {
+   "id": "c061",
+   "altura": 1.916,
+   "largura": 1.077,
+   "magreza": 1.013,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.45,
+    0.3,
+    0.21
+   ],
+   "cor_cabelo": [
+    0.45,
+    0.42,
+    0.4
+   ],
+   "cor_camisa": [
+    0.7,
+    0.45,
+    0.5
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.53,
+   "pausa_min": 5.0,
+   "pausa_max": 10.4,
+   "fase": 0.549
+  },
+  {
+   "id": "c062",
+   "altura": 1.893,
+   "largura": 1.011,
+   "magreza": 1.059,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.45,
+    0.3,
+    0.21
+   ],
+   "cor_cabelo": [
+    0.6,
+    0.45,
+    0.25
+   ],
+   "cor_camisa": [
+    0.6,
+    0.4,
+    0.7
+   ],
+   "cor_calca": [
+    0.3,
+    0.22,
+    0.2
+   ],
+   "cor_sapato": [
+    0.12,
+    0.11,
+    0.1
+   ],
+   "velocidade": 1.48,
+   "pausa_min": 2.4,
+   "pausa_max": 19.9,
+   "fase": 0.913
+  },
+  {
+   "id": "c063",
+   "altura": 1.721,
+   "largura": 0.915,
+   "magreza": 1.1,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.3,
+    0.2,
+    0.15
+   ],
+   "cor_cabelo": [
+    0.2,
+    0.12,
+    0.1
+   ],
+   "cor_camisa": [
+    0.25,
+    0.25,
+    0.28
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.74,
+   "pausa_min": 3.0,
+   "pausa_max": 14.6,
+   "fase": 0.384
+  },
+  {
+   "id": "c064",
+   "altura": 1.891,
+   "largura": 1.032,
+   "magreza": 1.114,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.3,
+    0.2,
+    0.15
+   ],
+   "cor_cabelo": [
+    0.55,
+    0.3,
+    0.2
+   ],
+   "cor_camisa": [
+    0.85,
+    0.85,
+    0.85
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.64,
+   "pausa_min": 3.1,
+   "pausa_max": 11.6,
+   "fase": 0.587
+  },
+  {
+   "id": "c065",
+   "altura": 1.92,
+   "largura": 1.027,
+   "magreza": 0.895,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.92,
+    0.78,
+    0.66
+   ],
+   "cor_cabelo": [
+    0.45,
+    0.42,
+    0.4
+   ],
+   "cor_camisa": [
+    0.4,
+    0.6,
+    0.65
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.42,
+   "pausa_min": 3.3,
+   "pausa_max": 10.3,
+   "fase": 0.697
+  },
+  {
+   "id": "c066",
+   "altura": 1.762,
+   "largura": 0.95,
+   "magreza": 1.083,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.7,
+    0.5,
+    0.36
+   ],
+   "cor_cabelo": [
+    0.55,
+    0.3,
+    0.2
+   ],
+   "cor_camisa": [
+    0.25,
+    0.25,
+    0.28
+   ],
+   "cor_calca": [
+    0.35,
+    0.35,
+    0.38
+   ],
+   "cor_sapato": [
+    0.8,
+    0.78,
+    0.72
+   ],
+   "velocidade": 1.45,
+   "pausa_min": 2.1,
+   "pausa_max": 14.0,
+   "fase": 0.59
+  },
+  {
+   "id": "c067",
+   "altura": 1.872,
+   "largura": 1.142,
+   "magreza": 0.982,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.7,
+    0.5,
+    0.36
+   ],
+   "cor_cabelo": [
+    0.1,
+    0.08,
+    0.07
+   ],
+   "cor_camisa": [
+    0.35,
+    0.65,
+    0.4
+   ],
+   "cor_calca": [
+    0.45,
+    0.4,
+    0.32
+   ],
+   "cor_sapato": [
+    0.8,
+    0.78,
+    0.72
+   ],
+   "velocidade": 1.19,
+   "pausa_min": 5.1,
+   "pausa_max": 11.2,
+   "fase": 0.623
+  },
+  {
+   "id": "c068",
+   "altura": 1.697,
+   "largura": 0.904,
+   "magreza": 0.949,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.53,
+    0.36,
+    0.25
+   ],
+   "cor_cabelo": [
+    0.45,
+    0.42,
+    0.4
+   ],
+   "cor_camisa": [
+    0.9,
+    0.55,
+    0.35
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.12,
+    0.11,
+    0.1
+   ],
+   "velocidade": 1.52,
+   "pausa_min": 2.9,
+   "pausa_max": 16.2,
+   "fase": 0.287
+  },
+  {
+   "id": "c069",
+   "altura": 1.634,
+   "largura": 0.907,
+   "magreza": 1.144,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.76,
+    0.56,
+    0.4
+   ],
+   "cor_cabelo": [
+    0.15,
+    0.14,
+    0.16
+   ],
+   "cor_camisa": [
+    0.35,
+    0.65,
+    0.4
+   ],
+   "cor_calca": [
+    0.35,
+    0.35,
+    0.38
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.69,
+   "pausa_min": 2.2,
+   "pausa_max": 17.6,
+   "fase": 0.293
+  },
+  {
+   "id": "c070",
+   "altura": 1.689,
+   "largura": 0.924,
+   "magreza": 1.009,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.6,
+    0.41,
+    0.29
+   ],
+   "cor_cabelo": [
+    0.6,
+    0.45,
+    0.25
+   ],
+   "cor_camisa": [
+    0.35,
+    0.65,
+    0.4
+   ],
+   "cor_calca": [
+    0.2,
+    0.25,
+    0.4
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.52,
+   "pausa_min": 3.0,
+   "pausa_max": 19.0,
+   "fase": 0.143
+  },
+  {
+   "id": "c071",
+   "altura": 1.721,
+   "largura": 0.956,
+   "magreza": 0.927,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.7,
+    0.5,
+    0.36
+   ],
+   "cor_cabelo": [
+    0.2,
+    0.12,
+    0.1
+   ],
+   "cor_camisa": [
+    0.4,
+    0.6,
+    0.65
+   ],
+   "cor_calca": [
+    0.25,
+    0.25,
+    0.27
+   ],
+   "cor_sapato": [
+    0.12,
+    0.11,
+    0.1
+   ],
+   "velocidade": 1.42,
+   "pausa_min": 3.4,
+   "pausa_max": 15.1,
+   "fase": 0.639
+  },
+  {
+   "id": "c072",
+   "altura": 1.707,
+   "largura": 0.955,
+   "magreza": 1.104,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.53,
+    0.36,
+    0.25
+   ],
+   "cor_cabelo": [
+    0.15,
+    0.14,
+    0.16
+   ],
+   "cor_camisa": [
+    0.3,
+    0.5,
+    0.8
+   ],
+   "cor_calca": [
+    0.25,
+    0.25,
+    0.27
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.49,
+   "pausa_min": 4.3,
+   "pausa_max": 19.9,
+   "fase": 0.295
+  },
+  {
+   "id": "c073",
+   "altura": 1.912,
+   "largura": 1.077,
+   "magreza": 0.932,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.85,
+    0.68,
+    0.55
+   ],
+   "cor_cabelo": [
+    0.15,
+    0.14,
+    0.16
+   ],
+   "cor_camisa": [
+    0.6,
+    0.4,
+    0.7
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.8,
+    0.78,
+    0.72
+   ],
+   "velocidade": 1.51,
+   "pausa_min": 3.4,
+   "pausa_max": 15.6,
+   "fase": 0.621
+  },
+  {
+   "id": "c074",
+   "altura": 1.801,
+   "largura": 1.096,
+   "magreza": 1.048,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.76,
+    0.56,
+    0.4
+   ],
+   "cor_cabelo": [
+    0.1,
+    0.08,
+    0.07
+   ],
+   "cor_camisa": [
+    0.6,
+    0.4,
+    0.7
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.17,
+   "pausa_min": 3.5,
+   "pausa_max": 9.6,
+   "fase": 0.91
+  },
+  {
+   "id": "c075",
+   "altura": 1.671,
+   "largura": 1.005,
+   "magreza": 0.91,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.92,
+    0.78,
+    0.66
+   ],
+   "cor_cabelo": [
+    0.2,
+    0.12,
+    0.1
+   ],
+   "cor_camisa": [
+    0.35,
+    0.65,
+    0.4
+   ],
+   "cor_calca": [
+    0.15,
+    0.15,
+    0.17
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.73,
+   "pausa_min": 3.2,
+   "pausa_max": 18.4,
+   "fase": 0.804
+  },
+  {
+   "id": "c076",
+   "altura": 1.723,
+   "largura": 0.903,
+   "magreza": 1.076,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.53,
+    0.36,
+    0.25
+   ],
+   "cor_cabelo": [
+    0.45,
+    0.42,
+    0.4
+   ],
+   "cor_camisa": [
+    0.3,
+    0.5,
+    0.8
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.16,
+   "pausa_min": 4.1,
+   "pausa_max": 13.5,
+   "fase": 0.673
+  },
+  {
+   "id": "c077",
+   "altura": 1.799,
+   "largura": 1.055,
+   "magreza": 1.097,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.45,
+    0.3,
+    0.21
+   ],
+   "cor_cabelo": [
+    0.15,
+    0.14,
+    0.16
+   ],
+   "cor_camisa": [
+    0.8,
+    0.3,
+    0.3
+   ],
+   "cor_calca": [
+    0.3,
+    0.22,
+    0.2
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.7,
+   "pausa_min": 2.9,
+   "pausa_max": 8.8,
+   "fase": 0.824
+  },
+  {
+   "id": "c078",
+   "altura": 1.886,
+   "largura": 0.971,
+   "magreza": 0.972,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.85,
+    0.68,
+    0.55
+   ],
+   "cor_cabelo": [
+    0.2,
+    0.12,
+    0.1
+   ],
+   "cor_camisa": [
+    0.9,
+    0.55,
+    0.35
+   ],
+   "cor_calca": [
+    0.2,
+    0.25,
+    0.4
+   ],
+   "cor_sapato": [
+    0.12,
+    0.11,
+    0.1
+   ],
+   "velocidade": 1.29,
+   "pausa_min": 4.2,
+   "pausa_max": 12.7,
+   "fase": 0.371
+  },
+  {
+   "id": "c079",
+   "altura": 1.901,
+   "largura": 1.089,
+   "magreza": 1.012,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.6,
+    0.41,
+    0.29
+   ],
+   "cor_cabelo": [
+    0.55,
+    0.3,
+    0.2
+   ],
+   "cor_camisa": [
+    0.3,
+    0.5,
+    0.8
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.52,
+   "pausa_min": 5.8,
+   "pausa_max": 11.4,
+   "fase": 0.69
+  },
+  {
+   "id": "c080",
+   "altura": 1.63,
+   "largura": 1.013,
+   "magreza": 0.921,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.92,
+    0.78,
+    0.66
+   ],
+   "cor_cabelo": [
+    0.45,
+    0.42,
+    0.4
+   ],
+   "cor_camisa": [
+    0.8,
+    0.3,
+    0.3
+   ],
+   "cor_calca": [
+    0.45,
+    0.4,
+    0.32
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.26,
+   "pausa_min": 2.5,
+   "pausa_max": 18.2,
+   "fase": 0.455
+  },
+  {
+   "id": "c081",
+   "altura": 1.795,
+   "largura": 1.073,
+   "magreza": 1.029,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.92,
+    0.78,
+    0.66
+   ],
+   "cor_cabelo": [
+    0.75,
+    0.65,
+    0.5
+   ],
+   "cor_camisa": [
+    0.35,
+    0.65,
+    0.4
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.8,
+    0.78,
+    0.72
+   ],
+   "velocidade": 1.19,
+   "pausa_min": 5.1,
+   "pausa_max": 10.5,
+   "fase": 0.216
+  },
+  {
+   "id": "c082",
+   "altura": 1.872,
+   "largura": 0.979,
+   "magreza": 0.894,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.85,
+    0.68,
+    0.55
+   ],
+   "cor_cabelo": [
+    0.2,
+    0.12,
+    0.1
+   ],
+   "cor_camisa": [
+    0.35,
+    0.65,
+    0.4
+   ],
+   "cor_calca": [
+    0.25,
+    0.25,
+    0.27
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.63,
+   "pausa_min": 2.4,
+   "pausa_max": 18.4,
+   "fase": 0.132
+  },
+  {
+   "id": "c083",
+   "altura": 1.683,
+   "largura": 1.117,
+   "magreza": 1.027,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.3,
+    0.2,
+    0.15
+   ],
+   "cor_cabelo": [
+    0.1,
+    0.08,
+    0.07
+   ],
+   "cor_camisa": [
+    0.35,
+    0.65,
+    0.4
+   ],
+   "cor_calca": [
+    0.35,
+    0.35,
+    0.38
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.47,
+   "pausa_min": 5.0,
+   "pausa_max": 13.7,
+   "fase": 0.778
+  },
+  {
+   "id": "c084",
+   "altura": 1.74,
+   "largura": 0.913,
+   "magreza": 1.001,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.85,
+    0.68,
+    0.55
+   ],
+   "cor_cabelo": [
+    0.2,
+    0.12,
+    0.1
+   ],
+   "cor_camisa": [
+    0.9,
+    0.55,
+    0.35
+   ],
+   "cor_calca": [
+    0.35,
+    0.35,
+    0.38
+   ],
+   "cor_sapato": [
+    0.12,
+    0.11,
+    0.1
+   ],
+   "velocidade": 1.19,
+   "pausa_min": 3.9,
+   "pausa_max": 12.8,
+   "fase": 0.686
+  },
+  {
+   "id": "c085",
+   "altura": 1.731,
+   "largura": 1.153,
+   "magreza": 0.872,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.6,
+    0.41,
+    0.29
+   ],
+   "cor_cabelo": [
+    0.35,
+    0.22,
+    0.12
+   ],
+   "cor_camisa": [
+    0.35,
+    0.65,
+    0.4
+   ],
+   "cor_calca": [
+    0.15,
+    0.15,
+    0.17
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.38,
+   "pausa_min": 4.4,
+   "pausa_max": 11.5,
+   "fase": 0.506
+  },
+  {
+   "id": "c086",
+   "altura": 1.709,
+   "largura": 1.118,
+   "magreza": 0.884,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.45,
+    0.3,
+    0.21
+   ],
+   "cor_cabelo": [
+    0.55,
+    0.3,
+    0.2
+   ],
+   "cor_camisa": [
+    0.9,
+    0.55,
+    0.35
+   ],
+   "cor_calca": [
+    0.25,
+    0.25,
+    0.27
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.35,
+   "pausa_min": 3.8,
+   "pausa_max": 13.0,
+   "fase": 0.095
+  },
+  {
+   "id": "c087",
+   "altura": 1.708,
+   "largura": 1.08,
+   "magreza": 0.962,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.7,
+    0.5,
+    0.36
+   ],
+   "cor_cabelo": [
+    0.35,
+    0.22,
+    0.12
+   ],
+   "cor_camisa": [
+    0.3,
+    0.5,
+    0.8
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.12,
+    0.11,
+    0.1
+   ],
+   "velocidade": 1.21,
+   "pausa_min": 2.4,
+   "pausa_max": 16.9,
+   "fase": 0.812
+  },
+  {
+   "id": "c088",
+   "altura": 1.756,
+   "largura": 1.056,
+   "magreza": 1.018,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.76,
+    0.56,
+    0.4
+   ],
+   "cor_cabelo": [
+    0.55,
+    0.3,
+    0.2
+   ],
+   "cor_camisa": [
+    0.85,
+    0.85,
+    0.85
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.67,
+   "pausa_min": 4.9,
+   "pausa_max": 19.6,
+   "fase": 0.6
+  },
+  {
+   "id": "c089",
+   "altura": 1.68,
+   "largura": 1.053,
+   "magreza": 0.914,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.45,
+    0.3,
+    0.21
+   ],
+   "cor_cabelo": [
+    0.35,
+    0.22,
+    0.12
+   ],
+   "cor_camisa": [
+    0.85,
+    0.85,
+    0.85
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.22,
+   "pausa_min": 3.1,
+   "pausa_max": 10.7,
+   "fase": 0.429
+  },
+  {
+   "id": "c090",
+   "altura": 1.758,
+   "largura": 1.11,
+   "magreza": 1.037,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.85,
+    0.68,
+    0.55
+   ],
+   "cor_cabelo": [
+    0.2,
+    0.12,
+    0.1
+   ],
+   "cor_camisa": [
+    0.8,
+    0.3,
+    0.3
+   ],
+   "cor_calca": [
+    0.25,
+    0.25,
+    0.27
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.57,
+   "pausa_min": 3.2,
+   "pausa_max": 12.1,
+   "fase": 0.006
+  },
+  {
+   "id": "c091",
+   "altura": 1.872,
+   "largura": 1.05,
+   "magreza": 0.97,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.85,
+    0.68,
+    0.55
+   ],
+   "cor_cabelo": [
+    0.35,
+    0.22,
+    0.12
+   ],
+   "cor_camisa": [
+    0.4,
+    0.6,
+    0.65
+   ],
+   "cor_calca": [
+    0.25,
+    0.25,
+    0.27
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.4,
+   "pausa_min": 3.4,
+   "pausa_max": 12.4,
+   "fase": 0.722
+  },
+  {
+   "id": "c092",
+   "altura": 1.837,
+   "largura": 1.05,
+   "magreza": 0.875,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.6,
+    0.41,
+    0.29
+   ],
+   "cor_cabelo": [
+    0.1,
+    0.08,
+    0.07
+   ],
+   "cor_camisa": [
+    0.3,
+    0.5,
+    0.8
+   ],
+   "cor_calca": [
+    0.15,
+    0.15,
+    0.17
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.55,
+   "pausa_min": 3.9,
+   "pausa_max": 13.3,
+   "fase": 0.273
+  },
+  {
+   "id": "c093",
+   "altura": 1.829,
+   "largura": 0.914,
+   "magreza": 0.979,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.7,
+    0.5,
+    0.36
+   ],
+   "cor_cabelo": [
+    0.2,
+    0.12,
+    0.1
+   ],
+   "cor_camisa": [
+    0.8,
+    0.3,
+    0.3
+   ],
+   "cor_calca": [
+    0.25,
+    0.25,
+    0.27
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.74,
+   "pausa_min": 2.2,
+   "pausa_max": 10.5,
+   "fase": 0.945
+  },
+  {
+   "id": "c094",
+   "altura": 1.834,
+   "largura": 1.109,
+   "magreza": 0.937,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.7,
+    0.5,
+    0.36
+   ],
+   "cor_cabelo": [
+    0.55,
+    0.3,
+    0.2
+   ],
+   "cor_camisa": [
+    0.35,
+    0.65,
+    0.4
+   ],
+   "cor_calca": [
+    0.25,
+    0.25,
+    0.27
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.47,
+   "pausa_min": 2.9,
+   "pausa_max": 14.7,
+   "fase": 0.668
+  },
+  {
+   "id": "c095",
+   "altura": 1.681,
+   "largura": 0.999,
+   "magreza": 1.073,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.7,
+    0.5,
+    0.36
+   ],
+   "cor_cabelo": [
+    0.35,
+    0.22,
+    0.12
+   ],
+   "cor_camisa": [
+    0.85,
+    0.85,
+    0.85
+   ],
+   "cor_calca": [
+    0.3,
+    0.22,
+    0.2
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.49,
+   "pausa_min": 4.8,
+   "pausa_max": 13.0,
+   "fase": 0.115
+  },
+  {
+   "id": "c096",
+   "altura": 1.558,
+   "largura": 0.977,
+   "magreza": 1.09,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.92,
+    0.78,
+    0.66
+   ],
+   "cor_cabelo": [
+    0.35,
+    0.22,
+    0.12
+   ],
+   "cor_camisa": [
+    0.25,
+    0.25,
+    0.28
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.12,
+    0.11,
+    0.1
+   ],
+   "velocidade": 1.3,
+   "pausa_min": 4.4,
+   "pausa_max": 14.3,
+   "fase": 0.396
+  },
+  {
+   "id": "c097",
+   "altura": 1.665,
+   "largura": 0.982,
+   "magreza": 0.95,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.76,
+    0.56,
+    0.4
+   ],
+   "cor_cabelo": [
+    0.75,
+    0.65,
+    0.5
+   ],
+   "cor_camisa": [
+    0.85,
+    0.85,
+    0.85
+   ],
+   "cor_calca": [
+    0.15,
+    0.15,
+    0.17
+   ],
+   "cor_sapato": [
+    0.8,
+    0.78,
+    0.72
+   ],
+   "velocidade": 1.29,
+   "pausa_min": 2.6,
+   "pausa_max": 10.4,
+   "fase": 0.602
+  },
+  {
+   "id": "c098",
+   "altura": 1.831,
+   "largura": 1.077,
+   "magreza": 0.903,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.7,
+    0.5,
+    0.36
+   ],
+   "cor_cabelo": [
+    0.15,
+    0.14,
+    0.16
+   ],
+   "cor_camisa": [
+    0.7,
+    0.45,
+    0.5
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.56,
+   "pausa_min": 5.5,
+   "pausa_max": 15.7,
+   "fase": 0.987
+  },
+  {
+   "id": "c099",
+   "altura": 1.67,
+   "largura": 1.171,
+   "magreza": 0.945,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.7,
+    0.5,
+    0.36
+   ],
+   "cor_cabelo": [
+    0.15,
+    0.14,
+    0.16
+   ],
+   "cor_camisa": [
+    0.6,
+    0.4,
+    0.7
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.5,
+   "pausa_min": 3.4,
+   "pausa_max": 8.9,
+   "fase": 0.462
+  },
+  {
+   "id": "c100",
+   "altura": 1.564,
+   "largura": 0.991,
+   "magreza": 0.936,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.76,
+    0.56,
+    0.4
+   ],
+   "cor_cabelo": [
+    0.55,
+    0.3,
+    0.2
+   ],
+   "cor_camisa": [
+    0.9,
+    0.55,
+    0.35
+   ],
+   "cor_calca": [
+    0.3,
+    0.22,
+    0.2
+   ],
+   "cor_sapato": [
+    0.12,
+    0.11,
+    0.1
+   ],
+   "velocidade": 1.42,
+   "pausa_min": 5.2,
+   "pausa_max": 15.8,
+   "fase": 0.322
+  },
+  {
+   "id": "c101",
+   "altura": 1.726,
+   "largura": 0.925,
+   "magreza": 0.869,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.92,
+    0.78,
+    0.66
+   ],
+   "cor_cabelo": [
+    0.35,
+    0.22,
+    0.12
+   ],
+   "cor_camisa": [
+    0.4,
+    0.6,
+    0.65
+   ],
+   "cor_calca": [
+    0.35,
+    0.35,
+    0.38
+   ],
+   "cor_sapato": [
+    0.8,
+    0.78,
+    0.72
+   ],
+   "velocidade": 1.17,
+   "pausa_min": 4.8,
+   "pausa_max": 19.9,
+   "fase": 0.524
+  },
+  {
+   "id": "c102",
+   "altura": 1.776,
+   "largura": 0.989,
+   "magreza": 1.125,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.92,
+    0.78,
+    0.66
+   ],
+   "cor_cabelo": [
+    0.1,
+    0.08,
+    0.07
+   ],
+   "cor_camisa": [
+    0.85,
+    0.85,
+    0.85
+   ],
+   "cor_calca": [
+    0.2,
+    0.25,
+    0.4
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.21,
+   "pausa_min": 4.7,
+   "pausa_max": 11.4,
+   "fase": 0.724
+  },
+  {
+   "id": "c103",
+   "altura": 1.793,
+   "largura": 1.152,
+   "magreza": 1.112,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.6,
+    0.41,
+    0.29
+   ],
+   "cor_cabelo": [
+    0.45,
+    0.42,
+    0.4
+   ],
+   "cor_camisa": [
+    0.6,
+    0.4,
+    0.7
+   ],
+   "cor_calca": [
+    0.35,
+    0.35,
+    0.38
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.23,
+   "pausa_min": 4.8,
+   "pausa_max": 9.0,
+   "fase": 0.559
+  },
+  {
+   "id": "c104",
+   "altura": 1.788,
+   "largura": 0.979,
+   "magreza": 0.888,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.76,
+    0.56,
+    0.4
+   ],
+   "cor_cabelo": [
+    0.55,
+    0.3,
+    0.2
+   ],
+   "cor_camisa": [
+    0.4,
+    0.6,
+    0.65
+   ],
+   "cor_calca": [
+    0.15,
+    0.15,
+    0.17
+   ],
+   "cor_sapato": [
+    0.12,
+    0.11,
+    0.1
+   ],
+   "velocidade": 1.37,
+   "pausa_min": 2.7,
+   "pausa_max": 10.6,
+   "fase": 0.948
+  },
+  {
+   "id": "c105",
+   "altura": 1.73,
+   "largura": 0.948,
+   "magreza": 0.891,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.76,
+    0.56,
+    0.4
+   ],
+   "cor_cabelo": [
+    0.1,
+    0.08,
+    0.07
+   ],
+   "cor_camisa": [
+    0.85,
+    0.85,
+    0.85
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.8,
+    0.78,
+    0.72
+   ],
+   "velocidade": 1.51,
+   "pausa_min": 2.6,
+   "pausa_max": 10.2,
+   "fase": 0.693
+  },
+  {
+   "id": "c106",
+   "altura": 1.781,
+   "largura": 1.151,
+   "magreza": 1.066,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.92,
+    0.78,
+    0.66
+   ],
+   "cor_cabelo": [
+    0.75,
+    0.65,
+    0.5
+   ],
+   "cor_camisa": [
+    0.9,
+    0.55,
+    0.35
+   ],
+   "cor_calca": [
+    0.3,
+    0.22,
+    0.2
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.6,
+   "pausa_min": 5.1,
+   "pausa_max": 10.8,
+   "fase": 0.239
+  },
+  {
+   "id": "c107",
+   "altura": 1.907,
+   "largura": 1.115,
+   "magreza": 1.121,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.7,
+    0.5,
+    0.36
+   ],
+   "cor_cabelo": [
+    0.15,
+    0.14,
+    0.16
+   ],
+   "cor_camisa": [
+    0.6,
+    0.4,
+    0.7
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.45,
+   "pausa_min": 3.7,
+   "pausa_max": 9.9,
+   "fase": 0.2
+  },
+  {
+   "id": "c108",
+   "altura": 1.774,
+   "largura": 1.142,
+   "magreza": 0.866,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.92,
+    0.78,
+    0.66
+   ],
+   "cor_cabelo": [
+    0.35,
+    0.22,
+    0.12
+   ],
+   "cor_camisa": [
+    0.4,
+    0.6,
+    0.65
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.12,
+    0.11,
+    0.1
+   ],
+   "velocidade": 1.32,
+   "pausa_min": 5.1,
+   "pausa_max": 11.3,
+   "fase": 0.905
+  },
+  {
+   "id": "c109",
+   "altura": 1.605,
+   "largura": 1.011,
+   "magreza": 1.134,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.7,
+    0.5,
+    0.36
+   ],
+   "cor_cabelo": [
+    0.45,
+    0.42,
+    0.4
+   ],
+   "cor_camisa": [
+    0.8,
+    0.3,
+    0.3
+   ],
+   "cor_calca": [
+    0.45,
+    0.4,
+    0.32
+   ],
+   "cor_sapato": [
+    0.12,
+    0.11,
+    0.1
+   ],
+   "velocidade": 1.39,
+   "pausa_min": 3.5,
+   "pausa_max": 12.6,
+   "fase": 0.082
+  },
+  {
+   "id": "c110",
+   "altura": 1.633,
+   "largura": 0.976,
+   "magreza": 0.88,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.92,
+    0.78,
+    0.66
+   ],
+   "cor_cabelo": [
+    0.6,
+    0.45,
+    0.25
+   ],
+   "cor_camisa": [
+    0.35,
+    0.65,
+    0.4
+   ],
+   "cor_calca": [
+    0.2,
+    0.25,
+    0.4
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.7,
+   "pausa_min": 3.9,
+   "pausa_max": 18.0,
+   "fase": 0.759
+  },
+  {
+   "id": "c111",
+   "altura": 1.724,
+   "largura": 1.065,
+   "magreza": 1.122,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.45,
+    0.3,
+    0.21
+   ],
+   "cor_cabelo": [
+    0.6,
+    0.45,
+    0.25
+   ],
+   "cor_camisa": [
+    0.4,
+    0.6,
+    0.65
+   ],
+   "cor_calca": [
+    0.35,
+    0.35,
+    0.38
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.22,
+   "pausa_min": 3.2,
+   "pausa_max": 11.6,
+   "fase": 0.048
+  },
+  {
+   "id": "c112",
+   "altura": 1.705,
+   "largura": 1.118,
+   "magreza": 0.987,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.7,
+    0.5,
+    0.36
+   ],
+   "cor_cabelo": [
+    0.1,
+    0.08,
+    0.07
+   ],
+   "cor_camisa": [
+    0.4,
+    0.6,
+    0.65
+   ],
+   "cor_calca": [
+    0.3,
+    0.22,
+    0.2
+   ],
+   "cor_sapato": [
+    0.8,
+    0.78,
+    0.72
+   ],
+   "velocidade": 1.58,
+   "pausa_min": 3.2,
+   "pausa_max": 8.0,
+   "fase": 0.353
+  },
+  {
+   "id": "c113",
+   "altura": 1.761,
+   "largura": 0.936,
+   "magreza": 1.05,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.92,
+    0.78,
+    0.66
+   ],
+   "cor_cabelo": [
+    0.35,
+    0.22,
+    0.12
+   ],
+   "cor_camisa": [
+    0.4,
+    0.6,
+    0.65
+   ],
+   "cor_calca": [
+    0.3,
+    0.22,
+    0.2
+   ],
+   "cor_sapato": [
+    0.12,
+    0.11,
+    0.1
+   ],
+   "velocidade": 1.38,
+   "pausa_min": 3.9,
+   "pausa_max": 15.6,
+   "fase": 0.981
+  },
+  {
+   "id": "c114",
+   "altura": 1.644,
+   "largura": 0.885,
+   "magreza": 1.087,
+   "cabelo_comprido": false,
+   "cor_pele": [
+    0.76,
+    0.56,
+    0.4
+   ],
+   "cor_cabelo": [
+    0.45,
+    0.42,
+    0.4
+   ],
+   "cor_camisa": [
+    0.35,
+    0.65,
+    0.4
+   ],
+   "cor_calca": [
+    0.2,
+    0.25,
+    0.4
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.48,
+   "pausa_min": 5.3,
+   "pausa_max": 10.1,
+   "fase": 0.779
+  },
+  {
+   "id": "c115",
+   "altura": 1.722,
+   "largura": 1.089,
+   "magreza": 1.04,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.7,
+    0.5,
+    0.36
+   ],
+   "cor_cabelo": [
+    0.1,
+    0.08,
+    0.07
+   ],
+   "cor_camisa": [
+    0.6,
+    0.4,
+    0.7
+   ],
+   "cor_calca": [
+    0.25,
+    0.25,
+    0.27
+   ],
+   "cor_sapato": [
+    0.12,
+    0.11,
+    0.1
+   ],
+   "velocidade": 1.62,
+   "pausa_min": 5.5,
+   "pausa_max": 11.8,
+   "fase": 0.31
+  },
+  {
+   "id": "c116",
+   "altura": 1.697,
+   "largura": 1.125,
+   "magreza": 0.992,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.45,
+    0.3,
+    0.21
+   ],
+   "cor_cabelo": [
+    0.2,
+    0.12,
+    0.1
+   ],
+   "cor_camisa": [
+    0.85,
+    0.85,
+    0.85
+   ],
+   "cor_calca": [
+    0.18,
+    0.3,
+    0.25
+   ],
+   "cor_sapato": [
+    0.12,
+    0.11,
+    0.1
+   ],
+   "velocidade": 1.67,
+   "pausa_min": 3.3,
+   "pausa_max": 9.5,
+   "fase": 0.368
+  },
+  {
+   "id": "c117",
+   "altura": 1.879,
+   "largura": 1.103,
+   "magreza": 1.118,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.6,
+    0.41,
+    0.29
+   ],
+   "cor_cabelo": [
+    0.15,
+    0.14,
+    0.16
+   ],
+   "cor_camisa": [
+    0.9,
+    0.55,
+    0.35
+   ],
+   "cor_calca": [
+    0.15,
+    0.15,
+    0.17
+   ],
+   "cor_sapato": [
+    0.3,
+    0.18,
+    0.12
+   ],
+   "velocidade": 1.63,
+   "pausa_min": 4.9,
+   "pausa_max": 8.9,
+   "fase": 0.602
+  },
+  {
+   "id": "c118",
+   "altura": 1.854,
+   "largura": 1.044,
+   "magreza": 0.946,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.3,
+    0.2,
+    0.15
+   ],
+   "cor_cabelo": [
+    0.2,
+    0.12,
+    0.1
+   ],
+   "cor_camisa": [
+    0.9,
+    0.55,
+    0.35
+   ],
+   "cor_calca": [
+    0.3,
+    0.22,
+    0.2
+   ],
+   "cor_sapato": [
+    0.2,
+    0.2,
+    0.24
+   ],
+   "velocidade": 1.25,
+   "pausa_min": 3.8,
+   "pausa_max": 13.4,
+   "fase": 0.727
+  },
+  {
+   "id": "c119",
+   "altura": 1.887,
+   "largura": 1.064,
+   "magreza": 0.98,
+   "cabelo_comprido": true,
+   "cor_pele": [
+    0.85,
+    0.68,
+    0.55
+   ],
+   "cor_cabelo": [
+    0.35,
+    0.22,
+    0.12
+   ],
+   "cor_camisa": [
+    0.25,
+    0.25,
+    0.28
+   ],
+   "cor_calca": [
+    0.15,
+    0.15,
+    0.17
+   ],
+   "cor_sapato": [
+    0.8,
+    0.78,
+    0.72
+   ],
+   "velocidade": 1.72,
+   "pausa_min": 2.6,
+   "pausa_max": 15.3,
+   "fase": 0.781
+  }
+ ]
+}

@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3]
+[gd_scene load_steps=19 format=3]
 
 [ext_resource type="PackedScene" path="res://Amber.tscn" id="1_amber"]
 [ext_resource type="PackedScene" path="res://predios_originais.tscn" id="2_predios"]
@@ -10,6 +10,7 @@
 
 [ext_resource type="Script" path="res://scripts/bairros_500.gd" id="8_bairros500"]
 [ext_resource type="Script" path="res://scripts/mapa_interativo.gd" id="9_mapa"]
+[ext_resource type="Script" path="res://scripts/multidao_cidade.gd" id="10_multidao"]
 
 [sub_resource type="ProceduralSkyMaterial" id="Ceu_Natural"]
 sky_top_color = Color(0.34, 0.51, 0.70, 1)
@@ -118,6 +119,9 @@ script = ExtResource("7_bairros")
 
 [node name="Bairros_500" type="Node3D" parent="."]
 script = ExtResource("8_bairros500")
+
+[node name="Multidao_Cidade" type="Node3D" parent="."]
+script = ExtResource("10_multidao")
 
 [node name="Desempenho" type="Node" parent="."]
 script = ExtResource("5_desempenho")

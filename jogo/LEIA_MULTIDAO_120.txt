@@ -1,0 +1,41 @@
+MULTIDÃO DA CIDADE AMBERCITY — 120 MORADORES VAGANDO
+=====================================================
+
+O QUE FOI ADICIONADO:
+- assets/personagens_cidade.json: 120 perfis realistas e variados
+  (altura 1,55 m a 1,92 m, biotipo, cor de pele, cabelo, roupas,
+  velocidade de passeio entre 1,15 e 1,75 m/s).
+- scripts/morador.gd: cada morador é um humanoide com cabeça, tronco,
+  braços com cotovelos e pernas com joelhos/pés. Eles vagam pela cidade
+  seguindo as ruas e calçadas, escolhem destinos sozinhos, fazem pausas
+  no caminho (como gente real) e NUNCA ficam parados para sempre.
+- scripts/multidao_cidade.gd: cria os 120 moradores ao iniciar o jogo e
+  liga/desliga a animação conforme a distância da câmera (economia de FPS
+  no Android; só ~20 a 40 são animados por vez).
+- cidade.tscn: nó "Multidao_Cidade" já instalado na cena principal.
+
+ANIMAÇÃO DE ANDAR:
+- Os moradores usam a MESMA caminhada biomecânica real da Amber
+  (assets/amber_motion_baked.json): quadril, joelho e tornozelo com as
+  curvas reais de marcha (Murray/Winter/Perry), ombros e cotovelos no
+  ritmo da passada. A cadência se ajusta à altura e velocidade de cada
+  um, e todos começam em fases diferentes (ninguém marcha sincronizado).
+
+IMPORTANTE SOBRE OS MODELOS 3D:
+- Modelos humanos fotorrealistas da Unreal Engine (MetaHuman etc.) NÃO
+  puderam ser baixados neste ambiente: exigem conta Epic Games, licenças
+  próprias e não são compatíveis com Godot sem conversão manual.
+- Por isso cada morador recebeu um corpo humanoide proporcional e único,
+  animado com a mesma captura real da Amber. Se você quiser, depois
+  posso orientar como importar personagens do Marketplace da Unreal ou
+  usar o Mixamo (gratuito, via conta Adobe) para substituir os corpos.
+
+COMO TESTAR:
+1. Abra o projeto no Godot 4 (ABRA_ESTE_PROJETO_NOVO.txt).
+2. Rode cidade.tscn ou cidade_expandida.tscn.
+3. Caminhe pela cidade: pedestres vão aparecer nas ruas e calçadas,
+   indo e vindo, parando e recomeçando.
+
+AJUSTES RÁPIDOS (scripts/multidao_cidade.gd):
+- TOTAL_MAXIMO = 120  -> quantidade de moradores
+- DISTANCIA_ATIVACAO = 95 -> raio (m) onde eles são animados
